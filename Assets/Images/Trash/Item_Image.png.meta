@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: 86668ddc6fd0e2c4c9e45e44ec38fc69
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_0"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 682
+        width: 461
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41781e837f1b1fd449cdabdcae3c7698
+      internalID: 1205208333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_1"
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 836
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0412a6bbe92bc743b7ae86e638d5074
+      internalID: 2056481518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_2"
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 836
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02dec32a3ed883e438ec99fc1bcc624a
+      internalID: -779670619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_3"
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 836
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278c7a24965a0b9419207ea5ee14c6ab
+      internalID: 1849274800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_4"
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 836
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de07f0f29a4f514c8e46adb3df09ece
+      internalID: -58867635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_5"
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 835
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9eb2f2e9b9ab4548a4112f03e128258
+      internalID: 1347745094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_6"
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 793
+        width: 858
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3ac2656c0f2dd40ab84d301f1bde40
+      internalID: 915163723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_10"
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 729
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4a4befb8be2be4f91afd8b7feb979c
+      internalID: 997319295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_11"
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 729
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add770a7b0e0b134a83e3df47e2dd971
+      internalID: -768779164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_12"
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 729
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e461b2eac1dd1d4eb4c2ab11aefb8af
+      internalID: -358674089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_13"
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 729
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc77b431ebef7fc449b4733a63a2dfd7
+      internalID: -1813089504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_14"
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 729
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc280914e3590f42a6beeaffaf82db9
+      internalID: 741087606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_15"
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 246
+        width: 393
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063685b4475bffb488c6752f75e8c343
+      internalID: 137491403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_16"
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 294
+        width: 408
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb48a45eb9ac06409be5f0093227ea2
+      internalID: 430725725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_17"
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 245
+        width: 233
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e1b075d37619b45a2922b94762e4b0
+      internalID: 790867208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_18"
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 54
+        width: 140
+        height: 655
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e01bfd3f3827d4e8dcd36f06095a29
+      internalID: -853095646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_19"
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 74
+        width: 217
+        height: 583
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ed71194da2e834d948fc63b3076151
+      internalID: -300877342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_0": 1205208333
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_1": 2056481518
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_10": 997319295
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_11": -768779164
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_12": -358674089
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_13": -1813089504
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_14": 741087606
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_15": 137491403
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_16": 430725725
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_17": 790867208
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_18": -853095646
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_19": -300877342
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_2": -779670619
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_3": 1849274800
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_4": -58867635
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_5": 1347745094
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_6": 915163723
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_7": -2082854280
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_8": -457041497
+      "Daily Room Escape \U0001F579\uFE0F Play on CrazyGames_9": -589509088
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
