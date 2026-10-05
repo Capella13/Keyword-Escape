@@ -6259,7 +6259,7 @@ GameObject:
   - component: {fileID: 1580767728}
   m_Layer: 0
   m_Name: Blue_Simple-Tutorial
-  m_TagString: Untagged
+  m_TagString: HintText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6695,7 +6695,7 @@ GameObject:
   - component: {fileID: 1689271702}
   m_Layer: 0
   m_Name: Red_Simple-Tutorial
-  m_TagString: Untagged
+  m_TagString: HintText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7528,7 +7528,7 @@ GameObject:
   - component: {fileID: 1918580766}
   m_Layer: 0
   m_Name: Green_Simple-Tutorial
-  m_TagString: Untagged
+  m_TagString: HintText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

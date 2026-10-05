@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
 {
-    bool flag = true;   // 동일한 item이 클릭될 때마다 값이 바뀌면서 toggle 스위치 역할을 해주는 필드
+    private bool flag = true;   // 동일한 item이 클릭될 때마다 값이 바뀌면서 toggle 스위치 역할을 해주는 필드
     [SerializeField] int inventoryIndex;         // 현재 클릭된 인벤토리의 번호
     [SerializeField] GameObject[] inventorys;    // Hierarchy에 있는 inventory
     public static GameObject selectItem;         // 선택된 인벤토리

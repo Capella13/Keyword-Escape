@@ -25,6 +25,10 @@ public class HintController : MonoBehaviour
         {
             this.hintText.text = "깨트릴 수 있을 것 같다.";
         }
+        else if (gameObject.CompareTag("HintText"))
+        {
+            this.hintText.text = "힌트가 되는 문구가 쓰여있다.";
+        }
         else if (gameObject.CompareTag("KeyBox")) // 만약 태그가 KeyBox일 때
             // KeyBox : 열쇠가 들어있는 박스일 때. 문 왼쪽에 있는 박스를 의미한다.
         {
@@ -40,6 +44,5 @@ public class HintController : MonoBehaviour
         {
             this.hintText.text = "여기에는 아무것도 없는 것 같다.";
         }
-
     }
 }
