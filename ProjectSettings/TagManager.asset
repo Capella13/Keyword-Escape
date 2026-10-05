@@ -3,7 +3,25 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - 2
+  - Bag
+  - 1
+  - Hide
+  - 9
+  - 0
+  - 5
+  - Lock
+  - 4
+  - 10
+  - Key
+  - 6
+  - 11
+  - 3
+  - KeyBox
+  - Break
+  - 7
+  - 8
   layers:
   - Default
   - TransparentFX
