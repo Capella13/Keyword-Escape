@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeepCamera : MonoBehaviour
+public class KeepCamera : MonoBehaviour // 카메라가 가지고 있는 스크립트
+    // 카메라가 이 프로젝트 내에서 단 하나만 존재할 수 있게 해주는 스크립트 = 싱글톤 패턴
 {
     private static KeepCamera instance; // KeepCamera 인스턴스를 참조하는 필드
     // 이 인스턴스를 참조하는 필드는 하나만 존재해야 하므로 꼭 static를 붙여줘야 한다.
