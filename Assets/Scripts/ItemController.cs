@@ -14,7 +14,7 @@ public class ItemController : MonoBehaviour
 
         // 각 요소마다 초기화 작업
         items[0] = GameObject.Find("Inventory_0");
-        items[1] = GameObject.Find("Inventory_1");  
+        items[1] = GameObject.Find("Inventory_1");
         items[2] = GameObject.Find("Inventory_2");
         items[3] = GameObject.Find("Inventory_3");
         items[4] = GameObject.Find("Inventory_4");

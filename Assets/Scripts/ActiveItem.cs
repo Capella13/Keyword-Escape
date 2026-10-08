@@ -48,7 +48,7 @@ public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
             {
                 inventorys[i].transform.parent.gameObject.GetComponent<Image>().color
                  = new Color((172.0f / 255.0f), (172.0f / 255.0f), (172.0f / 255.0f));
-                // 회색으로 바꿔주기 - 문제가 있음
+                // 회색으로 바꿔주기
             }
         }
     }
