@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorChange : MonoBehaviour
+public class ColorChange0 : MonoBehaviour
 {
     private Color[] colors; // 색상 배열
-    public Color selectedColor0;    // 현재 선택된 색
-    private int selectedIndex = 0;  // 현재 선택된 색상의 인덱스 번호
+    public int selectedIndex = 0;  // 현재 선택된 색상의 인덱스 번호
     private SpriteRenderer childrenColor;   // 자식 오브젝트의 SpriteRenderer 컴포넌트 참조
 
     void Start()
@@ -23,8 +22,6 @@ public class ColorChange : MonoBehaviour
         this.childrenColor = transform.Find("Color_0").gameObject.GetComponent<SpriteRenderer>();
         // 자식 오브젝트의 SpriteRenderer 컴포넌트 찾기
 
-        this.selectedColor0 = this.colors[selectedIndex];
-        // 현재 선택된 색을 0번 인덱스의 색으로 초기화 하기
         this.childrenColor.color = this.colors[selectedIndex];
         // 자식 오브젝트가 가지고 있는 SpriteRenderer 컴포넌트의 color 프로퍼티를 현재의 색(colors[0])으로 초기화
     }
@@ -38,10 +35,13 @@ public class ColorChange : MonoBehaviour
             this.selectedIndex = 0;     // 색상 인덱스 코드를 0번으로 바꾸기
         }
 
-        this.selectedColor0 = this.colors[selectedIndex];
-        // 다음 색상으로 바꾼 값을 현재 선택된 색상 값으로 변경하기
         this.childrenColor.color = this.colors[selectedIndex];
         // 자식 오브젝트가 가지고 있는 SpriteRenderer 컴포넌트의 color 프로퍼티를 현재의 색(colors[0])으로 설정
-    }
 
+        if (this.selectedIndex == 0 && FindObjectOfType<ColorChange1>().selectedIndex == 3 &&
+            FindObjectOfType<ColorChange2>().selectedIndex == 2)
+        {
+            print("정답");
+        }
+    }
 }
