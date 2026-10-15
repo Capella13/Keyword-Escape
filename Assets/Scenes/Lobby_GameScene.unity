@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &15666404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!114 &122033479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
-  hintText: {fileID: 0}
+  hintText: {fileID: 1203430015}
 --- !u!1 &122333017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1461,7 @@ Transform:
   m_GameObject: {fileID: 331795929}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: 1.3, z: 90}
+  m_LocalPosition: {x: -6, y: 1.3, z: 1}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2213,7 +2213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &539723195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3296,7 +3296,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 0.2}
+  m_Size: {x: 1.6, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &779688297
 Transform:
@@ -3307,7 +3307,7 @@ Transform:
   m_GameObject: {fileID: 779688294}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: -2.202, z: 0}
+  m_LocalPosition: {x: 3, y: -1.8, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3413,7 +3413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &801961691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3472,7 +3472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
-  hintText: {fileID: 0}
+  hintText: {fileID: 1203430015}
 --- !u!1 &817734590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3572,7 +3572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &817734594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6609,7 +6609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &1505154494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6913,7 +6913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &1580767729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7142,7 +7142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &1689271703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7584,6 +7584,98 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801144190}
   m_CullTransparentMesh: 1
+--- !u!1 &1815250788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815250791}
+  - component: {fileID: 1815250790}
+  - component: {fileID: 1815250789}
+  m_Layer: 0
+  m_Name: ZoomBagCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1815250789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815250788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraMain: {fileID: 519420028}
+  backButton: {fileID: 1378676486}
+--- !u!61 &1815250790
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815250788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7, y: 2}
+  m_EdgeRadius: 0
+--- !u!4 &1815250791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815250788}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6, y: 1.3, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1854458859
 GameObject:
   m_ObjectHideFlags: 0
@@ -7843,7 +7935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &1854888197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8293,7 +8385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &1918580767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8571,7 +8663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &1968127602
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8604,7 +8696,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8615,7 +8707,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.87, y: 2.42}
+  m_Size: {x: 1.87, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1968127603
 MonoBehaviour:
@@ -8731,7 +8823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420028}
-  backButton: {fileID: 0}
+  backButton: {fileID: 1378676486}
 --- !u!61 &1975703832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9387,3 +9479,4 @@ SceneRoots:
   - {fileID: 338704510}
   - {fileID: 635608538}
   - {fileID: 779688297}
+  - {fileID: 1815250791}
