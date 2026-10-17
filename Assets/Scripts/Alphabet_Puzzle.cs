@@ -9,11 +9,6 @@ public class Alphabet_Puzzle : MonoBehaviour
 
     int now = 0;    // 현재 출력되는 알파벳 요소(인덱스)값 초기화
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (FindObjectOfType<Up>().selected)    // Up 버튼이 선택된 경우
