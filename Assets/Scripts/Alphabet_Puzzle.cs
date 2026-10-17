@@ -6,14 +6,16 @@ public class Alphabet_Puzzle : MonoBehaviour
 {
     [SerializeField] Sprite[] alphabets;    // 알파벳 스프라이트 이미지 배열 (26개)
     [SerializeField] GameObject alphabet;   // 선택된 알파벳이 출력되는 오브젝트
+    [SerializeField] GameObject up;         // Alphabet_Puzzle 오브젝트가 가지고 있는 Up 오브젝트
+    [SerializeField] GameObject down;       // Alphabet_Puzzle 오브젝트가 가지고 있는 Down 오브젝트
 
     int now = 0;    // 현재 출력되는 알파벳 요소(인덱스)값 초기화
 
     void Update()
     {
-        if (FindObjectOfType<Up>().selected)    // Up 버튼이 선택된 경우
+        if (up.GetComponent<Up>().selected)    // Up 버튼이 선택된 경우
         {
-            FindObjectOfType<Up>().selected = false;  // Up 버튼이 선택되었던 것을 다시 false로 돌려놓기
+            up.GetComponent<Up>().selected = false;  // Up 버튼이 선택되었던 것을 다시 false로 돌려놓기
 
             this.now++; // 현재 출력되는 알파벳 요소(인덱스)값을 다음 요소(인덱스)값으로 변경
 
@@ -26,9 +28,9 @@ public class Alphabet_Puzzle : MonoBehaviour
             // 현재 알파벳을 다음 알파벳으로 바꾸기
         }
 
-        if (FindObjectOfType<Down>().selected)    // Down 버튼이 선택된 경우
+        if (down.GetComponent<Down>().selected)    // Down 버튼이 선택된 경우
         {
-            FindObjectOfType<Down>().selected = false;  // Down 버튼이 선택되었던 것을 다시 false로 돌려놓기
+            down.GetComponent<Down>().selected = false;  // Down 버튼이 선택되었던 것을 다시 false로 돌려놓기
 
             this.now--; // 현재 출력되는 알파벳 요소(인덱스)값을 이전 요소(인덱스)값으로 변경
 
