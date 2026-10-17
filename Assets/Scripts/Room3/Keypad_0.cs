@@ -4,18 +4,7 @@ using UnityEngine;
 
 public class Keypad_0 : MonoBehaviour
 {
-    public bool selected = false;
-    
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool selected = false;   //
 
     private void OnMouseDown()
     {
