@@ -20,9 +20,5 @@ public class Keypad_0 : MonoBehaviour
     private void OnMouseDown()
     {
         selected = true;
-
-
     }
-
-
 }

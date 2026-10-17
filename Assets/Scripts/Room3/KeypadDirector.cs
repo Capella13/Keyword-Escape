@@ -6,8 +6,8 @@ public class KeypadDirector : MonoBehaviour
 {
     int count = 0;  // 현재 숫자 포지션 위치
 
-    [SerializeField] Sprite[] nums;     // 숫자 스프라이트 이미지 배열
-    [SerializeField] GameObject[] positions;    // 정답 입력란에 있는 숫자의 위치
+    [SerializeField] Sprite[] nums;     // 숫자 스프라이트 이미지 배열 (10개)
+    [SerializeField] GameObject[] positions;    // 정답 입력란에 있는 숫자의 위치 (3개)
 
     void Update()
     {
