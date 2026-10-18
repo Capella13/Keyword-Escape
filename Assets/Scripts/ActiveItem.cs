@@ -7,9 +7,12 @@ using UnityEngine.UI;
 public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
 {
     private bool flag = true;   // 동일한 item이 클릭될 때마다 값이 바뀌면서 toggle 스위치 역할을 해주는 필드
+
     [SerializeField] int inventoryIndex;         // 현재 클릭된 인벤토리의 번호
     [SerializeField] GameObject[] inventorys;    // Hierarchy에 있는 inventory
+
     public static GameObject selectItem;         // 선택된 인벤토리
+    public static int selectItemIndex;           // 
 
     public void OnButtonClick() // 버튼을 클릭할 때 마다 실행되는 메서드
     {
@@ -21,11 +24,19 @@ public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
         // Parse는 int형 구조체의 소속 메서드.
         // int형이 아닌 매개변수 인자의 자료형을 int로 바꿔 리턴하는 역할을 한다.
 
-        selectItem = ItemController.items[int.Parse(EventSystem.current.currentSelectedGameObject.tag)];
+        selectItemIndex = int.Parse(EventSystem.current.currentSelectedGameObject.tag);
+        // 현재 선택된 아이템의 인덱스 번호를 selectItemIndex 필드에 저장한다.
+        /// 저장하지 않으면 일일히 좌항의 있는 내용을 적어야 하는 것에 대한 불편함과,
+        /// 아이템 자세히보기 버튼을 클릭했을 때
+
+        selectItem = ItemController.items[selectItemIndex];
+        // 
 
         if (this.flag) // flag가 true이라면
         {
             Active(); // 흰색으로 변경
+            
+
         }
         else          // 아니라면 (= flag가 false라면)
         {

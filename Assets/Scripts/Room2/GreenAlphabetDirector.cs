@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class GreenAlphabetDirector : MonoBehaviour
 {
-    [SerializeField] GameObject[] selectAlphabets;  // 6개의 Alphabet_Puzzle_을 모아둔 배열
+    [SerializeField] GameObject[] selectAlphabets;  // 4개의 Alphabet_Puzzle_을 모아둔 배열
+    [SerializeField] GameObject openDoor;   // 열쇠가 들어있는 초록 상자의 열린 모습
+    [SerializeField] GameObject closeDoor;  // 열쇠가 들어있는 초록 상자의 닫힌 모습
+    [SerializeField] GameObject hammer;  // 망치
+
     private bool isAnswer = false;  // 정답의 유무를 체크하는 플래그 변수
 
     void Update()

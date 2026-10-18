@@ -5,6 +5,10 @@ using UnityEngine;
 public class RedAlphabetDirector : MonoBehaviour
 {
     [SerializeField] GameObject[] selectAlphabets;  // 6개의 Alphabet_Puzzle_을 모아둔 배열
+    [SerializeField] GameObject openDoor;   // 열쇠가 들어있는 빨간 상자의 열린 모습
+    [SerializeField] GameObject closeDoor;  // 열쇠가 들어있는 빨간 상자의 닫힌 모습
+    [SerializeField] GameObject key;  // 열쇠
+
     private bool isAnswer = false;  // 정답의 유무를 체크하는 플래그 변수
 
     void Update()
@@ -23,6 +27,11 @@ public class RedAlphabetDirector : MonoBehaviour
             selectAlphabets[5].GetComponent<Alphabet_Puzzle>().now == 12) // 답이 LUVGGM 일 때
         {
             print("정답");
+
+            openDoor.SetActive(true);   // 열린 상자 이미지 활성화
+            key.SetActive(true);        // 열쇠 모습 활성화
+            closeDoor.SetActive(false); // 닫힌 상자 이미지 비활성화
+
             isAnswer = true;
             // 다시 업데이트 메서드로 들어왔을 때, 같은 작업을 반복하지 않게 막아주는 용도의 플래그 변수를 true로 변경
         }

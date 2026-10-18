@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class GameDirector : MonoBehaviour
 {
-    [SerializeField] string RightnextRoom;      // 거실 찾기
+    [SerializeField] string rightNextRoom;     // 오른쪽 방 찾기
+    [SerializeField] string leftNextRoom;      // 왼쪽 방 찾기
 
     [SerializeField] GameObject cameraMain;     // 메인 카메라 찾기
     [SerializeField] GameObject detailBg;       // 자세히 보기 버튼을 누르면 나오는 아이템의 배경 (반투명 배경) 찾기
@@ -16,9 +17,13 @@ public class GameDirector : MonoBehaviour
 
     [SerializeField] GameObject[] detailItems;  // 아이템은 총 12가지 이므로 배열로 여러 개 선언.
 
-    public void ChangeScene() // 다음 장면 넘기는 화살표 버튼을 눌렀을 때 활성화되는 메서드
+    public void RChangeScene() // 오른쪽 장면 넘기는 화살표 버튼을 눌렀을 때 활성화되는 메서드
     {
-        SceneManager.LoadScene(RightnextRoom); // 다음으로 씬 넘기는 코드
+        SceneManager.LoadScene(rightNextRoom); // 다음으로 씬 넘기는 코드
+    }
+    public void LChangeScene() // 왼쪽 장면 넘기는 화살표 버튼을 눌렀을 때 활성화되는 메서드
+    {
+        SceneManager.LoadScene(leftNextRoom); // 다음으로 씬 넘기는 코드
     }
 
     public void OnDetailButton() // 자세히 보기 버튼을 눌렀을 때 활성화되는 메서드

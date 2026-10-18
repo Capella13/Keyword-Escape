@@ -14,6 +14,7 @@ public class ColorChange1 : MonoBehaviour
 
     void Start()
     {
+
         this.colors = new Color[6]; // 배열 인스턴스 생성
 
         this.colors[0] = new Color(209f / 255f, 97f / 255f, 97f / 255f);    // #D16161 - 빨간색

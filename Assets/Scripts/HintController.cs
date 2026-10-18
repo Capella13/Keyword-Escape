@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class HintController : MonoBehaviour
 {
     [SerializeField] Sprite openBag; // 에셋에 있는 가방 열린 이미지 연결해주기
+
+    [SerializeField] GameObject morseCode;  // 가방 열리는 이미지 때 활용할 모스부호 숫자표
+
     [SerializeField] Text hintText;  // 하단에 힌트를 알려주는 텍스트 컴포넌트 연결해주기
 
     private void OnMouseDown()
@@ -39,6 +42,8 @@ public class HintController : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = openBag;
             // 가방의 Sprite 이미지를 열려있는 가방의 이미지(openBag)으로 바꾼다.
+            morseCode.SetActive(true); // 숫자표 활성화
+
         }
         else
         {
