@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AlphabetDirector : MonoBehaviour
+public class RedAlphabetDirector : MonoBehaviour
 {
-    [SerializeField] GameObject[] selectAlphabets;  // 6개의 Alphabet_Puzzle을 모아둔 배열
+    [SerializeField] GameObject[] selectAlphabets;  // 6개의 Alphabet_Puzzle_을 모아둔 배열
     private bool isAnswer = false;  // 정답의 유무를 체크하는 플래그 변수
 
     void Update()
