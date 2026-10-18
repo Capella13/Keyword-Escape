@@ -2298,6 +2298,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 0}
   backButton: {fileID: 2135678450}
+--- !u!1001 &618769862
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2789965585026986609, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: leftScene
+      value: Lobby_GameScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550332288163242666, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_Name
+      value: L_Scene_Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949693409689985716, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
 --- !u!1 &650904871
 GameObject:
   m_ObjectHideFlags: 0
@@ -6376,6 +6437,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 0}
   backButton: {fileID: 2135678450}
+--- !u!1001 &1974074721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2356897435887424870, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_Name
+      value: R_Scene_Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083647631079268033, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678660990875298081, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: rightScene
+      value: Room2_GameScene
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
 --- !u!1 &2000088084
 GameObject:
   m_ObjectHideFlags: 0
@@ -7132,3 +7254,5 @@ SceneRoots:
   - {fileID: 869827161}
   - {fileID: 354042931}
   - {fileID: 1522935170}
+  - {fileID: 618769862}
+  - {fileID: 1974074721}

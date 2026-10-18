@@ -13,7 +13,7 @@ public class ZoomController : MonoBehaviour
     private void OnMouseDown()
     {
         GetComponent<BoxCollider2D>().enabled = false;
-
+        print(1);
         cameraMain.transform.position = new Vector3(this.transform.position.x + this.leftSet,
             this.transform.position.y, -10);
         // 카메라의 position 값을, 클릭한 오브젝트의 위치로 이동시킨다.
