@@ -35,7 +35,6 @@ public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
         if (this.flag) // flag가 true이라면
         {
             Active(); // 흰색으로 변경
-            
 
         }
         else          // 아니라면 (= flag가 false라면)

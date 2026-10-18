@@ -821,7 +821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &312311869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6815,8 +6815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 228467846}
 --- !u!61 &1894010451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6975,8 +6973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 228467846}
 --- !u!61 &1941357549
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1101,8 +1101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 0}
 --- !u!61 &163724683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1659,16 +1657,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nums:
-  - {fileID: 957677090, guid: 9900152585a32684689b222046655494, type: 3}
-  - {fileID: 1876750371, guid: 9900152585a32684689b222046655494, type: 3}
-  - {fileID: -1608189482, guid: 9900152585a32684689b222046655494, type: 3}
-  - {fileID: 570288676, guid: 9900152585a32684689b222046655494, type: 3}
-  - {fileID: 1755907830, guid: 9900152585a32684689b222046655494, type: 3}
-  - {fileID: -320063969, guid: 9900152585a32684689b222046655494, type: 3}
-  - {fileID: -1269789616, guid: 9900152585a32684689b222046655494, type: 3}
-  - {fileID: 417364796, guid: 9900152585a32684689b222046655494, type: 3}
-  - {fileID: -1682297229, guid: 9900152585a32684689b222046655494, type: 3}
-  - {fileID: 662829929, guid: 9900152585a32684689b222046655494, type: 3}
+  - {fileID: -1150623264, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
+  - {fileID: 205861042, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
+  - {fileID: -768433737, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
+  - {fileID: 939543560, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
+  - {fileID: -1545943723, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
+  - {fileID: -1096075792, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
+  - {fileID: 1164206068, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
+  - {fileID: 715121918, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
+  - {fileID: -317562976, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
+  - {fileID: -514509657, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
   positions:
   - {fileID: 826083503}
   - {fileID: 2003804770}
@@ -3184,8 +3182,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 957677090, guid: 9900152585a32684689b222046655494, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -1150623264, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5376,7 +5374,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 662829929, guid: 9900152585a32684689b222046655494, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5518,8 +5516,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 957677090, guid: 9900152585a32684689b222046655494, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -1150623264, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6296,7 +6294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1765065505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7452,8 +7450,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 957677090, guid: 9900152585a32684689b222046655494, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -1150623264, guid: 339c55b13b337df4a89f0f911d6fad96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

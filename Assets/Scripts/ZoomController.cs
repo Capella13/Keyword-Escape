@@ -22,11 +22,8 @@ public class ZoomController : MonoBehaviour
             backButton = KeepCanvas.instance.gameObject.transform.Find("BackButton").gameObject;
             // 자식의 transform 컴포넌트 중에서 BackButton 이라는 이름을 가지고 있는 자식 컴포넌트를 찾고
             // 그 컴포넌트를 가지고 있는 컴포넌트, 즉, BackButton 오브젝트를 찾는다.
-            print("Test" + backButton);
         }
     }
-
-
 
     private void OnMouseDown()
     {

@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SearchService;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using UnityEngine;  // 유니티 엔진을 사용하기 위해서 필요한 네임스페이스
+using UnityEngine.SceneManagement;  // 씬을 바꾸기 위해서 필요한 네임스페이스
+using UnityEngine.UI;   // UI를 사용하기 위해서 필요한 네임스페이스
 
 public class GameDirector : MonoBehaviour
 {
@@ -28,34 +28,91 @@ public class GameDirector : MonoBehaviour
 
     public void OnDetailButton() // 자세히 보기 버튼을 눌렀을 때 활성화되는 메서드
     {
-        this.detailBg.SetActive(true);      // 아이템의 반투명 배경 활성화하기
-        this.closeButton.SetActive(true);   // 아이템 자세히 보기 닫기 버튼 활성화 하기
+        if (ActiveItem.selectItem.GetComponent<Image>().sprite != null) // 만일 선택된 아이템이 없다면 실행하지 않기
+        {
+            this.detailBg.SetActive(true);      // 아이템의 반투명 배경 활성화하기
+            this.closeButton.SetActive(true);   // 아이템 자세히 보기 닫기 버튼 활성화 하기
 
-        for (int i = 0; i < detailItems.Length; i++) // 자세히 보기로 띄워져있는 아이템 전부 반복문으로 둘러보기
-        {
-            this.detailItems[i].SetActive(false); // 자세히 보기로 띄워져있는 아이템 전부 닫기 (모습 숨기기)
-        }
+            for (int i = 0; i < detailItems.Length; i++) // 자세히 보기로 띄워져있는 아이템 전부 반복문으로 둘러보기
+            {
+                this.detailItems[i].SetActive(false); // 자세히 보기로 띄워져있는 아이템 전부 닫기 (모습 숨기기)
+            }
 
-        if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Key")) // 만일 선택된 아이템이 열쇠(Key)라면
-        // ActiveItem.selectItem는 현재 선택된 인벤토리이다. (아이템이 아니다.)
-        // GetComponent<Image>().sprite는 인벤토리에 있는 아이템의 이미지를 찾는다.
-        // 그리고 이미지의 이름을 name 프로퍼티로 찾을 수 있다.
-        // 단, Tostring()으로 변환하면 안 됨. (순수한 문자열이 아니기 때문)
-        {
-            this.detailItems[0].SetActive(true); // 열쇠(Key)의 자세히 보기 이미지 띄우기
+            if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Key")) // 만일 선택된 아이템이 열쇠(Key)라면
+            /// ActiveItem.selectItem는 현재 선택된 인벤토리이다. (아이템이 아니다.)
+            /// GetComponent<Image>().sprite는 인벤토리에 있는 아이템의 이미지를 찾는다.
+            /// 그리고 이미지의 이름을 name 프로퍼티로 찾을 수 있다.
+            /// 단, Tostring()으로 변환하면 안 됨. (순수한 문자열이 아니기 때문)
+            {
+                this.detailItems[0].SetActive(true); // 열쇠(Key)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Morse"))
+            // 만일 선택된 아이템이 모스부호 숫자표(Morse-Code-Table)라면
+            {
+                this.detailItems[1].SetActive(true);
+                // 모스부호 숫자표(Morse)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Screwdriver"))
+            // 만일 선택된 아이템이 드라이버(Screwdriver)라면
+            {
+                this.detailItems[2].SetActive(true);
+                // 드라이버(Screwdriver)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Flashlight"))
+            // 만일 선택된 아이템이 손전등(Flash)라면
+            {
+                this.detailItems[3].SetActive(true);
+                // 손전등(Flash)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Battery"))
+            // 만일 선택된 아이템이 배터리(Battery)라면
+            {
+                this.detailItems[4].SetActive(true);
+                // 배터리(Battery)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Green_Note_1"))
+            // 만일 선택된 아이템이 초록색 쪽지(GreenNote1)라면
+            {
+                this.detailItems[5].SetActive(true);
+                // 초록색 쪽지(GreenNote1)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Green_Note_2"))
+            // 만일 선택된 아이템이 초록색 쪽지(GreenNote2)라면
+            {
+                this.detailItems[6].SetActive(true);
+                // 초록색 쪽지(GreenNote2)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Hammer"))
+            // 만일 선택된 아이템이 망치(Hammer)라면
+            {
+                this.detailItems[7].SetActive(true);
+                // 망치(Hammer)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Key_Note_L"))
+            // 만일 선택된 아이템이 알파벳 L(L)이라면
+            {
+                this.detailItems[8].SetActive(true);
+                // 알파벳 L(L)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Key_Note_U"))
+            // 만일 선택된 아이템이 알파벳 U(U)라면
+            {
+                this.detailItems[9].SetActive(true);
+                // 알파벳 U(U)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Key_Note_G"))
+            // 만일 선택된 아이템이 알파벳 G(G)라면
+            {
+                this.detailItems[10].SetActive(true);
+                // 알파벳 G(G)의 자세히 보기 이미지 띄우기
+            }
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Key_Note_M"))
+            // 만일 선택된 아이템이 알파벳 M(M)이라면
+            {
+                this.detailItems[11].SetActive(true);
+                // 알파벳 M(M)의 자세히 보기 이미지 띄우기
+            }
         }
-        else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Bag")) // 만일 선택된 아이템이 가방(Bag)이라면
-        {
-            this.detailItems[1].SetActive(true); // 가방(Bag)의 자세히 보기 이미지 띄우기
-        }
-        else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Light")) // 이미지 만들어야 함
-        {
-            // 이미지 만들고 그 이미지를 연결해주고 하는 노가다 해야함..
-        }
-        /*else
-        {
-            // 추후 이곳에서 선택되지 않은 상태, 즉 null일 때 자세히 보기를 클릭했을 때 나는 오류를 처리해주기
-        }*/ 
     }
 
     public void OnDetailCloseButton() // 자세히 보기 닫기 버튼(DetailCloseButton)을 클릭했을 때 활성화되는 메서드

@@ -1101,8 +1101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &204348896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,8 +1479,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &291805848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,8 +1622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &354042929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,8 +1765,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &360444399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,8 +2067,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &388141946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,8 +2286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1001 &618769862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2578,8 +2566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &745654384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2723,8 +2709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &750538908
 GameObject:
   m_ObjectHideFlags: 0
@@ -3073,8 +3057,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &869827159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,8 +3200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &909217860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,8 +3419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &1018506618
 GameObject:
   m_ObjectHideFlags: 0
@@ -3752,8 +3730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &1095202001
 GameObject:
   m_ObjectHideFlags: 0
@@ -4525,8 +4501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &1218505555
 GameObject:
   m_ObjectHideFlags: 0
@@ -5408,8 +5382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &1615689331
 GameObject:
   m_ObjectHideFlags: 0
@@ -6290,8 +6262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1 &1896250286
 GameObject:
   m_ObjectHideFlags: 0
@@ -6435,8 +6405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 0}
-  backButton: {fileID: 2135678450}
 --- !u!1001 &1974074721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6676,7 +6644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2046236815
 MonoBehaviour:
   m_ObjectHideFlags: 0
