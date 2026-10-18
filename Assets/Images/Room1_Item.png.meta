@@ -228,27 +228,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Room1_Item_8
-      rect:
-        serializedVersion: 2
-        x: 1426
-        y: 896
-        width: 481
-        height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1e1d7ebb8120c946bcf8ac5d23701d5
-      internalID: 806125882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Plant_2
       rect:
         serializedVersion: 2

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedAlphabetDirector : MonoBehaviour
+public class RedAlphabetDirector : MonoBehaviour    // Lobby에 있는 열쇠가 든 상자를 열 때 사용하는 스크립트
 {
     [SerializeField] GameObject[] selectAlphabets;  // 6개의 Alphabet_Puzzle_을 모아둔 배열
     [SerializeField] GameObject openDoor;   // 열쇠가 들어있는 빨간 상자의 열린 모습

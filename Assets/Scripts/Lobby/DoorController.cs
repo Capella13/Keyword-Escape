@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DoorController : MonoBehaviour
+public class DoorController : MonoBehaviour     // 로비에 있는 현관문을 열 때 사용하는 스크립트
 {
     /*[SerializeField] Sprite openDoor;
     // 인스펙터 창에서 이미지 연결해주기*/
 
-    [SerializeField] GameObject openDoor;
+    [SerializeField] GameObject openDoor;   // 
 
     private void OnMouseDown() // 문을 클릭하면 실행되는 메서드
     {

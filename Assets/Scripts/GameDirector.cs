@@ -5,7 +5,7 @@ using UnityEngine;  // 유니티 엔진을 사용하기 위해서 필요한 네임스페이스
 using UnityEngine.SceneManagement;  // 씬을 바꾸기 위해서 필요한 네임스페이스
 using UnityEngine.UI;   // UI를 사용하기 위해서 필요한 네임스페이스
 
-public class GameDirector : MonoBehaviour
+public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지 기능을 담당하는 스크립트
 {
     [SerializeField] string rightNextRoom;     // 오른쪽 방 찾기
     [SerializeField] string leftNextRoom;      // 왼쪽 방 찾기
@@ -19,11 +19,11 @@ public class GameDirector : MonoBehaviour
 
     public void RChangeScene() // 오른쪽 장면 넘기는 화살표 버튼을 눌렀을 때 활성화되는 메서드
     {
-        SceneManager.LoadScene(rightNextRoom); // 다음으로 씬 넘기는 코드
+        SceneManager.LoadScene(this.rightNextRoom); // 다음으로 씬 넘기는 코드
     }
     public void LChangeScene() // 왼쪽 장면 넘기는 화살표 버튼을 눌렀을 때 활성화되는 메서드
     {
-        SceneManager.LoadScene(leftNextRoom); // 다음으로 씬 넘기는 코드
+        SceneManager.LoadScene(this.leftNextRoom); // 다음으로 씬 넘기는 코드
     }
 
     public void OnDetailButton() // 자세히 보기 버튼을 눌렀을 때 활성화되는 메서드
@@ -130,12 +130,13 @@ public class GameDirector : MonoBehaviour
     {
         print("뒤로 가기 버튼 활성화");
 
-        GameObject.Find("ZoomColorPuzzle").GetComponent<BoxCollider2D>().enabled = true;
-        GameObject.Find("ZoomBagCollider").GetComponent<BoxCollider2D>().enabled = true;
+        /*GameObject.Find("ZoomColorPuzzle").GetComponent<BoxCollider2D>().enabled = true;
+        GameObject.Find("ZoomBagCollider").GetComponent<BoxCollider2D>().enabled = true;*/
 
-        cameraMain.transform.position = new Vector3(0, 0, -10);   // 카메라 원위치로 다시 되돌리기
 
-        cameraMain.GetComponent<Camera>().orthographicSize = 5f;
+        this.cameraMain.transform.position = new Vector3(0, 0, -10);   // 카메라 원위치로 다시 되돌리기
+
+        this.cameraMain.GetComponent<Camera>().orthographicSize = 5f;
         // 메인 카메라는 원근감이 없기 때문에 orthographicSize로 zoom을 조정해주어야 한다.
 
         this.backButton.SetActive(false);   // 뒤로 가기 버튼 비활성화 시키기
