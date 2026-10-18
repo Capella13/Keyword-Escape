@@ -8,6 +8,10 @@ public class ColorChange1 : MonoBehaviour
     public int selectedIndex = 0;  // 현재 선택된 색상의 인덱스 번호
     private SpriteRenderer childrenColor;   // 자식 오브젝트의 SpriteRenderer 컴포넌트 참조
 
+    [SerializeField] GameObject openDoor;       // 문이 열려있는 오브젝트
+    [SerializeField] GameObject screwdriver;    // 드라이버 아이템
+    [SerializeField] GameObject[] colorFrames;  // 색 프레임 (3개)
+
     void Start()
     {
         this.colors = new Color[6]; // 배열 인스턴스 생성
@@ -43,6 +47,12 @@ public class ColorChange1 : MonoBehaviour
             FindObjectOfType<ColorChange2>().selectedIndex == 2)
         {
             print("정답");
+            openDoor.SetActive(true);   // 문 열리는 모습 활성화
+            screwdriver.SetActive(true);    // 드라이버 모습 활성화
+            for (int i = 0; i < colorFrames.Length; i++)    // 색 프레임 요소 개수만큼 반복
+            {
+                colorFrames[i].SetActive(false);    // 색 프레임(3개) 모두 비활성화
+            }
         }
     }
 }
