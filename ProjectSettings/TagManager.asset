@@ -23,6 +23,8 @@ TagManager:
   - 7
   - 8
   - HintText
+  - Morse
+  - Driver
   layers:
   - Default
   - TransparentFX

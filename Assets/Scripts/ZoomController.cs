@@ -4,16 +4,34 @@ using UnityEngine;
 
 public class ZoomController : MonoBehaviour
 {
-    [SerializeField] GameObject cameraMain;     // 메인 카메라 오브젝트 찾기
-    [SerializeField] GameObject backButton;     // 다시 돌아가기 버튼 찾기
+    GameObject cameraMain;     // 메인 카메라 오브젝트 찾기
+    GameObject backButton;     // 다시 돌아가기 버튼 찾기
     // 비활성화 되어있는 상태에서는 GameObject.Find()로 찾을 수 없기 때문에 [SerializeField]로 연결해준다.
 
     private float leftSet = 0.4f;   // 오브젝트를 인벤토리의 크기만큼 왼쪽으로 옮기는 필드
 
+    private void Start()
+    {
+        if (KeepCamera.instance != null)    // 널 체크
+        {
+            cameraMain = KeepCamera.instance.gameObject;
+        }
+
+        if (KeepCanvas.instance != null)    // 널 체크
+        {
+            backButton = KeepCanvas.instance.gameObject.transform.Find("BackButton").gameObject;
+            // 자식의 transform 컴포넌트 중에서 BackButton 이라는 이름을 가지고 있는 자식 컴포넌트를 찾고
+            // 그 컴포넌트를 가지고 있는 컴포넌트, 즉, BackButton 오브젝트를 찾는다.
+            print("Test" + backButton);
+        }
+    }
+
+
+
     private void OnMouseDown()
     {
         GetComponent<BoxCollider2D>().enabled = false;
-        print(1);
+
         cameraMain.transform.position = new Vector3(this.transform.position.x + this.leftSet,
             this.transform.position.y, -10);
         // 카메라의 position 값을, 클릭한 오브젝트의 위치로 이동시킨다.

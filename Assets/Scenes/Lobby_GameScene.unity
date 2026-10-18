@@ -229,8 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &15666404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -448,7 +446,7 @@ GameObject:
   - component: {fileID: 39517831}
   - component: {fileID: 39517830}
   m_Layer: 0
-  m_Name: Key (1)
+  m_Name: Key_TEST
   m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1185,8 +1183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!114 &122033479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1292,7 +1288,7 @@ GameObject:
   - component: {fileID: 167431619}
   m_Layer: 0
   m_Name: Screwdriver
-  m_TagString: Untagged
+  m_TagString: Driver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1689,8 +1685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &331795933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2393,8 +2387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &539723195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2539,8 +2531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &560519964
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2973,8 +2963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &650564142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3341,6 +3329,7 @@ GameObject:
   - component: {fileID: 779688297}
   - component: {fileID: 779688296}
   - component: {fileID: 779688295}
+  - component: {fileID: 779688298}
   m_Layer: 0
   m_Name: ZoomColorPuzzle
   m_TagString: Untagged
@@ -3360,8 +3349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &779688296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3422,6 +3409,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &779688298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779688294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b446b9a986c61d9418ab815f00688c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &801961687
 GameObject:
   m_ObjectHideFlags: 0
@@ -3521,8 +3520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &801961691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3681,8 +3678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &817734594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6995,8 +6990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &1569907907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7140,8 +7133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &1580767729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7285,8 +7276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &1689271703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7346,7 +7335,7 @@ GameObject:
   - component: {fileID: 1700893892}
   m_Layer: 0
   m_Name: Morse-Code-Table
-  m_TagString: Untagged
+  m_TagString: Morse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7818,8 +7807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &1815250790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8138,8 +8125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &1854888197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8589,8 +8574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &1918580767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8735,8 +8718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &1968127602
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8896,8 +8877,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMain: {fileID: 519420028}
-  backButton: {fileID: 1378676486}
 --- !u!61 &1975703832
 BoxCollider2D:
   m_ObjectHideFlags: 0
