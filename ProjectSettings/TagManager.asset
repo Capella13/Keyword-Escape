@@ -37,6 +37,7 @@ TagManager:
   - BlackClock
   - Book
   - GGM
+  - RedClock
   layers:
   - Default
   - TransparentFX
