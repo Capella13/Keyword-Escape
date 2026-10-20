@@ -13,6 +13,9 @@ public class Black_Clock_2 : MonoBehaviour
     float nowAngle = 0f; //휠의 현재 회전위치(도)
     public int step = 0;
 
+    [SerializeField] GameObject openDoor;  // Safe 문 열려있는 모습 오브젝트
+    [SerializeField] GameObject keyNoteG;  // 쪽지 G가 들어있는 오브젝트
+
     void OnMouseDown() // 이 스크립트 오브젝트의 콜라이더 내에서 마우스 클릭 시
     {
         mouseInit = Input.mousePosition; // 드래그 시작위치
@@ -120,6 +123,10 @@ public class Black_Clock_2 : MonoBehaviour
             FindObjectOfType<Black_Clock_0>().step == 4)
         {
             print("정답");
+
+            this.openDoor.SetActive(true); // 문 열린 모습 활성화
+            this.keyNoteG.SetActive(true); // 쪽지 G 오브젝트 활성화
+            /// Lobby에 있는 열쇠 박스를 열기 위한 단서
         }
     }
 }

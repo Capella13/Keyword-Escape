@@ -25,6 +25,7 @@ TagManager:
   - HintText
   - Morse
   - Driver
+  - NoteG
   layers:
   - Default
   - TransparentFX

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Black_Clock_0 : MonoBehaviour
+public class Black_Clock_0 : MonoBehaviour  // Room2에 있는 검은 시계 퍼즐에 사용하는 스크립트
 {
     float sensitivity = 30f; // 회전에 필요한 드래그 최소 길이
     float rotateInterval = 0.3f; // 드래그 중 회전하는 시간 간격(초)
@@ -11,7 +11,10 @@ public class Black_Clock_0 : MonoBehaviour
     float nextRotateTime = 0f; // 다음 회전이 가능한 시간
 
     float nowAngle = 0f; // 휠의 현재 회전 위치(도)
-    public int step = 0;
+    public int step = 0; // 
+
+    [SerializeField] GameObject openDoor;  // Safe 문 열려있는 모습 오브젝트
+    [SerializeField] GameObject keyNoteG;  // 쪽지 G가 들어있는 오브젝트
 
     void OnMouseDown() // 이 스크립트 오브젝트의 콜라이더 내에서 마우스 클릭시
     {
@@ -24,7 +27,7 @@ public class Black_Clock_0 : MonoBehaviour
         // 드래그 된 벡터(스크린 좌표 기준)
         Vector3 mouseOffset = Input.mousePosition - mouseInit;
 
-        if (mouseOffset.magnitude > sensitivity) // 드래그 된 벡터 길이가 회전 필요 최소길 이 보다 길 때
+        if (mouseOffset.magnitude > sensitivity) // 드래그 된 벡터 길이가 회전 필요 최소 길이 보다 길 때
         {
             // 현재 설정된 시간 간격(rotateInterval)이 지났을 때만 회전 실행
             if (Time.time >= nextRotateTime) // 최초엔 시간 간격 없이 회전
@@ -92,7 +95,7 @@ public class Black_Clock_0 : MonoBehaviour
         }
     }
 
-    void rotateWheel(float ang)
+    void rotateWheel(float ang)     // 회전하는 메서드
     {
         transform.Rotate(new Vector3(0, 0, ang)); // 오브젝트 회전
         nowAngle = nowAngle + ang; // 현재 휠의 회전 위치 갱신
@@ -120,6 +123,10 @@ public class Black_Clock_0 : MonoBehaviour
             FindObjectOfType<Black_Clock_2>().step == 26) // 정답 : 4, 13, 26
         {
             print("정답");
+
+            this.openDoor.SetActive(true); // 문 열린 모습 활성화
+            this.keyNoteG.SetActive(true); // 쪽지 G 오브젝트 활성화
+            /// Lobby에 있는 열쇠 박스를 열기 위한 단서
         }
     }
 }

@@ -8,7 +8,7 @@ public class ItemController : MonoBehaviour
     [SerializeField] Sprite newSprite;      // Inspector에서 Image의 Source Image로 들어가야 할 필드
     public static GameObject[] items;       // Hierarchy에 있는 inventory
 
-    public static bool isGotKey = false;
+    public static bool isGotKey = false;        // 
     public static bool isGotMorse = false;
     public static bool isGotDriver = false;
     public static bool isGotFlash = false;
@@ -65,7 +65,7 @@ public class ItemController : MonoBehaviour
         }
         if (gameObject.CompareTag("Key"))
         {
-            isGotKey = true;
+            isGotKey = true;    // 
         }
         
 

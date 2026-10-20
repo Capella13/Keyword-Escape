@@ -27,7 +27,7 @@ public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
         selectItemIndex = int.Parse(EventSystem.current.currentSelectedGameObject.tag);
         // 현재 선택된 아이템의 인덱스 번호를 selectItemIndex 필드에 저장한다.
         /// 저장하지 않으면 일일히 좌항의 있는 내용을 적어야 하는 것에 대한 불편함과,
-        /// 아이템 자세히보기 버튼을 클릭했을 때
+        /// 아이템 자세히보기 버튼을 클릭했을 때 현재 어떤 아이템이 선택이 되었는지가 분실되기 때문
 
         selectItem = ItemController.items[selectItemIndex];
         // 
@@ -52,9 +52,9 @@ public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
 
         // 나머지 아이템 인벤토리의 ActiveItem 스크립트에 InActive를 호출시킨다. - 숙제
 
-        for (int i = 0; i < inventorys.Length; i++)
+        for (int i = 0; i < this.inventorys.Length; i++)
         {
-            if (i != inventoryIndex) // 현재 클릭한 인벤토리 값이 아닌 다른 나머지 애들
+            if (i != this.inventoryIndex) // 현재 클릭한 인벤토리 값이 아닌 다른 나머지 애들
             {
                 inventorys[i].transform.parent.gameObject.GetComponent<Image>().color
                  = new Color((172.0f / 255.0f), (172.0f / 255.0f), (172.0f / 255.0f));
