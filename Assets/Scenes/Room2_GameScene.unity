@@ -1323,6 +1323,7 @@ GameObject:
   - component: {fileID: 433631213}
   - component: {fileID: 433631212}
   - component: {fileID: 433631214}
+  - component: {fileID: 433631215}
   m_Layer: 0
   m_Name: Green_Frame
   m_TagString: Untagged
@@ -1442,6 +1443,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.72307694, y: 0.74615383}
   m_EdgeRadius: 0
+--- !u!114 &433631215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433631211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &441603296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,6 +1869,7 @@ GameObject:
   - component: {fileID: 561397790}
   - component: {fileID: 561397789}
   - component: {fileID: 561397791}
+  - component: {fileID: 561397792}
   m_Layer: 0
   m_Name: Pot2
   m_TagString: Break
@@ -1975,6 +1989,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6769231, y: 1.0384616}
   m_EdgeRadius: 0
+--- !u!114 &561397792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561397788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &591532922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,6 +2012,7 @@ GameObject:
   - component: {fileID: 591532924}
   - component: {fileID: 591532923}
   - component: {fileID: 591532925}
+  - component: {fileID: 591532926}
   m_Layer: 0
   m_Name: Fireplace
   m_TagString: Hide
@@ -2105,6 +2132,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.623077, y: 3.6384616}
   m_EdgeRadius: 0
+--- !u!114 &591532926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591532922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &623461406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2116,6 +2155,7 @@ GameObject:
   - component: {fileID: 623461408}
   - component: {fileID: 623461407}
   - component: {fileID: 623461409}
+  - component: {fileID: 623461410}
   m_Layer: 0
   m_Name: Safe_Close_1
   m_TagString: Lock
@@ -2235,6 +2275,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2923077, y: 1.2923077}
   m_EdgeRadius: 0
+--- !u!114 &623461410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623461406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &623891217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,6 +2969,7 @@ GameObject:
   - component: {fileID: 907852600}
   - component: {fileID: 907852599}
   - component: {fileID: 907852601}
+  - component: {fileID: 907852602}
   m_Layer: 0
   m_Name: Chair_1
   m_TagString: Untagged
@@ -3036,6 +3089,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0769231, y: 2.7230768}
   m_EdgeRadius: 0
+--- !u!114 &907852602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907852598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &937830584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3206,6 +3271,7 @@ GameObject:
   - component: {fileID: 942300695}
   - component: {fileID: 942300694}
   - component: {fileID: 942300696}
+  - component: {fileID: 942300697}
   m_Layer: 0
   m_Name: Outlet
   m_TagString: Untagged
@@ -3325,6 +3391,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.34, y: 2.23}
   m_EdgeRadius: 0
+--- !u!114 &942300697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942300693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &978490053
 GameObject:
   m_ObjectHideFlags: 0
@@ -3901,6 +3979,7 @@ GameObject:
   - component: {fileID: 1227634011}
   - component: {fileID: 1227634010}
   - component: {fileID: 1227634012}
+  - component: {fileID: 1227634013}
   m_Layer: 0
   m_Name: Image-Frame
   m_TagString: Untagged
@@ -4020,6 +4099,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0538461, y: 1.7384615}
   m_EdgeRadius: 0
+--- !u!114 &1227634013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227634009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1237587072
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,6 +4333,7 @@ GameObject:
   - component: {fileID: 1249459076}
   - component: {fileID: 1249459075}
   - component: {fileID: 1249459077}
+  - component: {fileID: 1249459078}
   m_Layer: 0
   m_Name: Pot4
   m_TagString: Untagged
@@ -4361,6 +4453,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 1.1230769}
   m_EdgeRadius: 0
+--- !u!114 &1249459078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249459074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1282090082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5098,6 +5202,7 @@ GameObject:
   - component: {fileID: 1373007640}
   - component: {fileID: 1373007639}
   - component: {fileID: 1373007641}
+  - component: {fileID: 1373007642}
   m_Layer: 0
   m_Name: Cleaning-tools-Item
   m_TagString: Untagged
@@ -5217,6 +5322,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7153846, y: 1.6}
   m_EdgeRadius: 0
+--- !u!114 &1373007642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373007638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1386169403
 GameObject:
   m_ObjectHideFlags: 0
@@ -5983,6 +6100,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1469207994}
   - component: {fileID: 1469207993}
+  - component: {fileID: 1469207996}
+  - component: {fileID: 1469207995}
   m_Layer: 0
   m_Name: Pot3
   m_TagString: Untagged
@@ -6057,6 +6176,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469207995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469207992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1469207996
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469207992}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.84615386, y: 3.9692307}
+    newSize: {x: 0.84615386, y: 3.9692307}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.84615386, y: 3.9692307}
+  m_EdgeRadius: 0
 --- !u!1 &1524821980
 GameObject:
   m_ObjectHideFlags: 0
@@ -6591,6 +6767,7 @@ GameObject:
   - component: {fileID: 1714017685}
   - component: {fileID: 1714017684}
   - component: {fileID: 1714017686}
+  - component: {fileID: 1714017687}
   m_Layer: 0
   m_Name: Books
   m_TagString: Hide
@@ -6710,6 +6887,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5769231, y: 0.97692305}
   m_EdgeRadius: 0
+--- !u!114 &1714017687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714017683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1715168842
 GameObject:
   m_ObjectHideFlags: 0
@@ -6872,6 +7061,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1778309453}
   - component: {fileID: 1778309452}
+  - component: {fileID: 1778309455}
+  - component: {fileID: 1778309454}
   m_Layer: 0
   m_Name: Chair_0
   m_TagString: Untagged
@@ -6946,6 +7137,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1778309454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778309451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1778309455
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778309451}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.0769231, y: 2.7230768}
+    newSize: {x: 2.0769231, y: 2.7230768}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0769231, y: 2.7230768}
+  m_EdgeRadius: 0
 --- !u!1 &1844436184
 GameObject:
   m_ObjectHideFlags: 0
@@ -7267,6 +7515,7 @@ GameObject:
   - component: {fileID: 1941357546}
   - component: {fileID: 1941357549}
   - component: {fileID: 1941357548}
+  - component: {fileID: 1941357550}
   m_Layer: 0
   m_Name: Green-Box
   m_TagString: Untagged
@@ -7398,6 +7647,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7230769, y: 1.2846154}
   m_EdgeRadius: 0
+--- !u!114 &1941357550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941357545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685fb546071a72a46bd230646c8eb42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openBag: {fileID: 0}
+  morseCode: {fileID: 0}
 --- !u!1 &1953261962
 GameObject:
   m_ObjectHideFlags: 0
@@ -8111,6 +8374,7 @@ GameObject:
   - component: {fileID: 2134492778}
   - component: {fileID: 2134492777}
   - component: {fileID: 2134492779}
+  - component: {fileID: 2134492780}
   m_Layer: 0
   m_Name: Pot1
   m_TagString: Break
@@ -8230,6 +8494,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.63076925, y: 0.9461538}
   m_EdgeRadius: 0
+--- !u!114 &2134492780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134492776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1197,7 +1197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
   morseCode: {fileID: 0}
-  hintText: {fileID: 1203430015}
 --- !u!1 &122333017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,7 +1827,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
   morseCode: {fileID: 1700893891}
-  hintText: {fileID: 1203430015}
 --- !u!1 &338704505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,8 +2849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
-  morseCode: {fileID: 1700893891}
-  hintText: {fileID: 1203430015}
+  morseCode: {fileID: 0}
 --- !u!1 &563116594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,7 +3291,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
   morseCode: {fileID: 0}
-  hintText: {fileID: 1203430015}
 --- !u!1 &662829512
 GameObject:
   m_ObjectHideFlags: 0
@@ -3922,7 +3918,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
   morseCode: {fileID: 0}
-  hintText: {fileID: 1203430015}
 --- !u!1 &809912326
 GameObject:
   m_ObjectHideFlags: 0
@@ -6304,9 +6299,11 @@ GameObject:
   - component: {fileID: 1240753362}
   - component: {fileID: 1240753361}
   - component: {fileID: 1240753360}
+  - component: {fileID: 1240753363}
+  - component: {fileID: 1240753364}
   m_Layer: 0
   m_Name: Outlet
-  m_TagString: Untagged
+  m_TagString: Lock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6423,6 +6420,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1240753363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240753359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685fb546071a72a46bd230646c8eb42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
+  morseCode: {fileID: 0}
+--- !u!114 &1240753364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240753359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251349820
 GameObject:
   m_ObjectHideFlags: 0
@@ -8862,8 +8885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
-  morseCode: {fileID: 1700893891}
-  hintText: {fileID: 1203430015}
+  morseCode: {fileID: 0}
 --- !u!1 &1861243546
 GameObject:
   m_ObjectHideFlags: 0
@@ -9456,7 +9478,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
   morseCode: {fileID: 0}
-  hintText: {fileID: 0}
 --- !u!1 &1975703828
 GameObject:
   m_ObjectHideFlags: 0
@@ -9614,8 +9635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openBag: {fileID: -1727466041, guid: c701fb34656277049b23d499cc2d220a, type: 3}
-  morseCode: {fileID: 1700893891}
-  hintText: {fileID: 1203430015}
+  morseCode: {fileID: 0}
 --- !u!1 &1995641456
 GameObject:
   m_ObjectHideFlags: 0

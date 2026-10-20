@@ -17,6 +17,8 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
 
     [SerializeField] GameObject[] detailItems;  // 아이템은 총 12가지 이므로 배열로 여러 개 선언.
 
+    public static string zoomedObject;  // 줌인한 오브젝트의 이름
+
     public void RChangeScene() // 오른쪽 장면 넘기는 화살표 버튼을 눌렀을 때 활성화되는 메서드
     {
         SceneManager.LoadScene(this.rightNextRoom); // 다음으로 씬 넘기는 코드
@@ -46,9 +48,10 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
             {
                 this.detailItems[0].SetActive(true); // 열쇠(Key)의 자세히 보기 이미지 띄우기
             }
-            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Morse"))
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Morse-Code-Table"))
             // 만일 선택된 아이템이 모스부호 숫자표(Morse-Code-Table)라면
             {
+                print("morse");
                 this.detailItems[1].SetActive(true);
                 // 모스부호 숫자표(Morse)의 자세히 보기 이미지 띄우기
             }
@@ -129,6 +132,9 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
     public void OnBackButton() // 뒤로 가기 버튼을 클릭했을 때 활성화되는 메서드
     {
         print("뒤로 가기 버튼 활성화");
+        print(zoomedObject);
+        GameObject.Find(zoomedObject).GetComponent<BoxCollider2D>().enabled = true;
+        // 비활성화 했던 콜라이더 다시 활성화
 
         /*GameObject.Find("ZoomColorPuzzle").GetComponent<BoxCollider2D>().enabled = true;
         GameObject.Find("ZoomBagCollider").GetComponent<BoxCollider2D>().enabled = true;*/

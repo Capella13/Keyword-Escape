@@ -12,7 +12,7 @@ public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
     [SerializeField] GameObject[] inventorys;    // Hierarchy에 있는 inventory
 
     public static GameObject selectItem;         // 선택된 인벤토리
-    public static int selectItemIndex;           // 
+    public static int selectItemIndex;           // 현재 선택된 아이템의 인덱스 번호를 selectItemIndex 필드에 저장
 
     public void OnButtonClick() // 버튼을 클릭할 때 마다 실행되는 메서드
     {
@@ -30,7 +30,7 @@ public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
         /// 아이템 자세히보기 버튼을 클릭했을 때 현재 어떤 아이템이 선택이 되었는지가 분실되기 때문
 
         selectItem = ItemController.items[selectItemIndex];
-        // 
+        // 현재 선택된 인벤토리 안에 있는 아이템
 
         if (this.flag) // flag가 true이라면
         {
