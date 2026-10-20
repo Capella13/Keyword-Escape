@@ -11,7 +11,7 @@ public class DetailFlash_On : MonoBehaviour
 
     private void Start()
     {
-        // 싱글톤 오브젝트를 바인딩([SerializeField]) 방법으로 찾을 때 못 찾는 경우가 있음. (유니티 버그 같음..)
+        // 싱글톤 오브젝트를 바인딩([SerializeField]) 방법으로 찾을 때 못 찾는 경우가 있음.
         // 여기서도 이런 경우가 생겨서 바인딩 대신에 직접 찾는 방법을 사용했다.
 
         if (KeepCanvas.instance != null)    // 널 체크
@@ -25,5 +25,6 @@ public class DetailFlash_On : MonoBehaviour
     private void OnMouseDown()
     {
         this.hintText.text = "이걸로 벽난로 안을 살펴볼 수 있을 것 같다.";
+
     }
 }

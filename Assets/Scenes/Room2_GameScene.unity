@@ -2013,6 +2013,7 @@ GameObject:
   - component: {fileID: 591532923}
   - component: {fileID: 591532925}
   - component: {fileID: 591532926}
+  - component: {fileID: 591532927}
   m_Layer: 0
   m_Name: Fireplace
   m_TagString: Dark
@@ -2144,6 +2145,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &591532927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591532922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9de17241d781149a0b5008410e059d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broke: {fileID: 0}
 --- !u!1 &623461406
 GameObject:
   m_ObjectHideFlags: 0

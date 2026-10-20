@@ -135,9 +135,14 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
 
         print(zoomedObject);
 
-        GameObject.Find(zoomedObject).GetComponent<BoxCollider2D>().enabled = true;
-        // 비활성화 했던 콜라이더 다시 활성화
+        /*GameObject.Find(zoomedObject).GetComponent<BoxCollider2D>().enabled = true;
+        // 비활성화 했던 콜라이더 다시 활성화*/
 
+        if (GameObject.Find(zoomedObject) != null) // 줌인한 오브젝트가 존재한다면
+        {
+            GameObject.Find(zoomedObject).GetComponent<BoxCollider2D>().enabled = true;
+            // 비활성화 했던 콜라이더 다시 활성화
+        }
 
         this.cameraMain.transform.position = new Vector3(0, 0, -10);   // 카메라 원위치로 다시 되돌리기
 

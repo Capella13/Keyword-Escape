@@ -9,6 +9,8 @@ public class DetailFlash_Off : MonoBehaviour
 {
     Text hintText;  // 하단에 힌트를 알려주는 텍스트 컴포넌트 연결해주기
 
+    [SerializeField] GameObject flashLightOn; // 플래시 라이트 오브젝트 연결
+
     private void Start()
     {
         // 싱글톤 오브젝트를 바인딩([SerializeField]) 방법으로 찾을 때 못 찾는 경우가 있음. (유니티 버그 같음..)
@@ -20,10 +22,22 @@ public class DetailFlash_Off : MonoBehaviour
             // 자식의 transform 컴포넌트 중에서 HintText 이라는 이름을 가지고 있는 자식 오브젝트를 찾고
             // Text 컴포넌트를 찾는다.
         }
+
+        
     }
 
     private void OnMouseDown()
     {
         this.hintText.text = "건전지가 들어있지 않아 사용할 수 없다.";
+
+        Sprite selectSprite = ItemController.items[ActiveItem.selectItemIndex]
+            .GetComponent<Image>().sprite;
+        // 인벤토리 목록에서 선택한 아이템의 이미지를 찾기
+
+        if (selectSprite.name.Equals("Battery")) // 현재 선택된 아이템이 Battery라면
+        {
+            gameObject.SetActive(false); // 꺼진 플래시 라이트 오브젝트 비활성화
+            this.flashLightOn.SetActive(true); // 켜진 플래시 라이트 오브젝트 활성화
+        }
     }
 }

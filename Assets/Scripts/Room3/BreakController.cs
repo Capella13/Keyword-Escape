@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BreakController : MonoBehaviour // 꽃병이나 컵이나 을 깨트리게 하는 오브젝트
+public class BreakController : MonoBehaviour // 꽃병이나 컵이나 벽을 깨트리게 하는 오브젝트
 {
     [SerializeField] GameObject broke;   // 깨져있는 잔해 모습 오브젝트
 
@@ -15,6 +15,7 @@ public class BreakController : MonoBehaviour // 꽃병이나 컵이나 을 깨트리게 하는
 
         if (selectSprite.name.Equals("Hammer")) // 현재 선택된 아이템이 Hammer라면
         {
+            gameObject.SetActive(false); // 깨지지 않은 오브젝트(=본인) 비활성화 
             broke.SetActive(true);   // 깨져있는 잔해 오브젝트 활성화
         }
     }
