@@ -26,6 +26,17 @@ TagManager:
   - Morse
   - Driver
   - NoteG
+  - Flash
+  - Battery
+  - Green_Note_1
+  - Green_Note_2
+  - Hammer
+  - NoteL
+  - NoteU
+  - LoteM
+  - BlackClock
+  - Book
+  - GGM
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,16 @@ public class GreenAlphabetDirector : MonoBehaviour  // Room2에 있는 초록색 상자�
 
     public static bool isAnswer = false;  // 정답의 유무를 체크하는 플래그 변수
 
+    private void Start()
+    {
+        //***********
+        if (isAnswer)
+        {
+            GameObject.Find("Green-Box").SetActive(false);
+            Green_Box_Open.SetActive(true);
+        }
+    }
+
     void Update()
     {
         if (isAnswer)   // 정답이 맞다면

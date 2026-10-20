@@ -591,7 +591,7 @@ TextureImporter:
         x: 1690
         y: 210
         width: 187
-        height: 242
+        height: 67
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -656,7 +656,7 @@ TextureImporter:
         width: 25
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -664,6 +664,27 @@ TextureImporter:
       bones: []
       spriteID: 2d68ec65d050ead4bbc6c6a3eccea0f8
       internalID: 2121323406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lobby_Item (1)_0
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 277
+        width: 187
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8aa7d5c59a31cd45b53a28744aa0394
+      internalID: 587176002
       vertices: []
       indices: 
       edges: []
@@ -698,6 +719,7 @@ TextureImporter:
       Green_Simple-Tutorial: 845927856
       Key-Box: 1557453242
       Light_1: -1731668751
+      Lobby_Item (1)_0: 587176002
       Lobby_Item (1)_12: -1625925033
       Lobby_Item (1)_2: 1322467050
       Lobby_Item (1)_28: 907026257

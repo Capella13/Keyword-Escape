@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 150769363}
   m_Layer: 0
   m_Name: Hammer
-  m_TagString: Untagged
+  m_TagString: Hammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3416,7 +3416,7 @@ GameObject:
   - component: {fileID: 978490056}
   m_Layer: 0
   m_Name: Special_Book
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3982,7 +3982,7 @@ GameObject:
   - component: {fileID: 1227634013}
   m_Layer: 0
   m_Name: Image-Frame
-  m_TagString: Untagged
+  m_TagString: GGM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4322,6 +4322,7 @@ MonoBehaviour:
   openDoor: {fileID: 1295273344}
   closeDoor: {fileID: 1941357545}
   hammer: {fileID: 150769360}
+  Green_Box_Open: {fileID: 1295273344}
 --- !u!1 &1249459074
 GameObject:
   m_ObjectHideFlags: 0

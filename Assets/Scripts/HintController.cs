@@ -29,17 +29,17 @@ public class HintController : MonoBehaviour
         if (gameObject.CompareTag("Hide")) // 만약 태그가 Hide일 때
             // Hide : 오브젝트 내에 힌트가 숨겨져 있을 때
         {
-            this.hintText.text = "무언가 숨겨져 있는 것 같다.";
+            this.hintText.text = "무언가 단서가 숨겨져 있는 것 같다.";
         }
         else if (gameObject.CompareTag("Lock")) // 만약 태그가 Lock일 때
             // Lock : 가지고 있는 아이템이나 단서들을 조합하여 잠긴 것을 열 수 있는 오브젝트일 때
         {
-            this.hintText.text = "열 수 있을 것 같다.";
+            this.hintText.text = "드라이버로 열 수 있을 것 같다.";
         }
         else if (gameObject.CompareTag("Break")) // 만약 태그가 Break일 때
             // Break : 망치 아이템을 사용하여 오브젝트를 클릭했을 때 깨질 수 있는 오브젝트일 때
         {
-            this.hintText.text = "깨트릴 수 있을 것 같다.";
+            this.hintText.text = "망치로 깨트릴 수 있을 것 같다.";
         }
         else if (gameObject.CompareTag("HintText"))
         {
@@ -59,7 +59,14 @@ public class HintController : MonoBehaviour
             {
                 morseCode.SetActive(true); // 숫자표 활성화
             }
-
+        }
+        else if (gameObject.CompareTag("BlackClock")) // 만약 태그가 BlackClock일 때
+        {
+            this.hintText.text = "이 검은 시계는 4시 13분 26초를 가리키고 있다.";
+        }
+        else if (gameObject.CompareTag("RedClock")) // 만약 태그가 RedClock일 때
+        {
+            this.hintText.text = "이 빨간 시계는 2시 24분 35초를 가리키고 있다.";
         }
         else
         {
