@@ -56,19 +56,19 @@ public class ItemController : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        else if (isGotL && gameObject.CompareTag("Key_Note_L"))
+        else if (isGotL && gameObject.CompareTag("NoteL"))
         {
             Destroy(this.gameObject);
         }
-        else if (isGotU && gameObject.CompareTag("Key_Note_U"))
+        else if (isGotU && gameObject.CompareTag("NoteU"))
         {
             Destroy(this.gameObject);
         }
-        else if (isGotG && gameObject.CompareTag("Key_Note_G"))
+        else if (isGotG && gameObject.CompareTag("NoteG"))
         {
             Destroy(this.gameObject);
         }
-        else if (isGotM && gameObject.CompareTag("Key_Note_M"))
+        else if (isGotM && gameObject.CompareTag("NoteM"))
         {
             Destroy(this.gameObject);
         }
@@ -140,19 +140,19 @@ public class ItemController : MonoBehaviour
         {
             isGotHammer = true;     // Hammer를 획득했음을 체크하는 플래그 변수를 true로 변경
         }
-        else if (gameObject.CompareTag("Key_Note_L"))
+        else if (gameObject.CompareTag("NoteL"))
         {
             isGotL = true;          // Key_Note_L을 획득했음을 체크하는 플래그 변수를 true로 변경
         }
-        else if (gameObject.CompareTag("Key_Note_U"))
+        else if (gameObject.CompareTag("NoteU"))
         {
             isGotU = true;          // Key_Note_U을 획득했음을 체크하는 플래그 변수를 true로 변경
         }
-        else if (gameObject.CompareTag("Key_Note_G"))
+        else if (gameObject.CompareTag("NoteG"))
         {
             isGotG = true;          // Key_Note_G을 획득했음을 체크하는 플래그 변수를 true로 변경
         }
-        else if (gameObject.CompareTag("Key_Note_M"))
+        else if (gameObject.CompareTag("NoteM"))
         {
             isGotM = true;          // Key_Note_M을 획득했음을 체크하는 플래그 변수를 true로 변경
 
