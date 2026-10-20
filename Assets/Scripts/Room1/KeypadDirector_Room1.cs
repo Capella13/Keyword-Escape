@@ -8,6 +8,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
 
     [SerializeField] Sprite[] nums;     // ¼ýÀÚ ½ºÇÁ¶óÀÌÆ® ÀÌ¹ÌÁö ¹è¿­ (10°³)
     [SerializeField] GameObject[] positions;    // Á¤´ä ÀÔ·Â¶õ¿¡ ÀÖ´Â ¼ýÀÚÀÇ À§Ä¡ (4°³)
+    [SerializeField] GameObject openDoor; // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ®
+    [SerializeField] GameObject noteL;    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ®
+
     public bool isInput = true;  // ÀÔ·Â °¡´É ¿©ºÎ
 
     void Update()
@@ -55,6 +58,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else  // ¿À´äÀÏ °æ¿ì
                     {
@@ -99,6 +105,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else  // ¿À´äÀÏ °æ¿ì
                     {
@@ -143,6 +152,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else
                     {
@@ -187,6 +199,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else
                     {
@@ -231,6 +246,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else
                     {
@@ -276,6 +294,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else
                     {
@@ -320,6 +341,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else
                     {
@@ -364,6 +388,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else
                     {
@@ -408,6 +435,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else
                     {
@@ -452,6 +482,9 @@ public class KeypadDirector_Room1: MonoBehaviour    // Room1¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                         this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // Á¤´ä 1231ÀÌ ¸ÂÀ» °æ¿ì
                     {
                         print("Á¤´ä");
+
+                        this.openDoor.SetActive(true);   // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
+                        this.noteL.SetActive(true);    // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ ½ÃÅ°±â
                     }
                     else
                     {
