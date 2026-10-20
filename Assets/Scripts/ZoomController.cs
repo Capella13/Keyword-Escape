@@ -38,14 +38,7 @@ public class ZoomController : MonoBehaviour // 오브젝트를 줌인해주는 메서드
             return; // 리턴하기 (이 이하 코드 실행하지 않기)
         }
 
-        if (gameObject.name.Equals("Green-Box"))
-        {
-            GameDirector.zoomedObject = "Green_Box_Open";
-        }
-        else
-        {
-            GameDirector.zoomedObject = gameObject.name;    // 현재 줌인한 오브젝트의 이름 저장
-        }
+        GameDirector.zoomedObject = gameObject.name;    // 현재 줌인한 오브젝트의 이름 저장
 
         GetComponent<BoxCollider2D>().enabled = false; 
         // 줌인한 오브젝트의 뒤에 있는 일부 오브젝트가 줌인한 오브젝트의 콜리이더 때문에 선택이 안 되는 경우가 존재하여

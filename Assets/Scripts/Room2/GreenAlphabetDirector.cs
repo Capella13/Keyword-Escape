@@ -9,11 +9,13 @@ public class GreenAlphabetDirector : MonoBehaviour  // Room2에 있는 초록색 상자�
     [SerializeField] GameObject closeDoor;  // 열쇠가 들어있는 초록 상자의 닫힌 모습
     [SerializeField] GameObject hammer;  // 망치
 
-    private bool isAnswer = false;  // 정답의 유무를 체크하는 플래그 변수
+    [SerializeField] GameObject Green_Box_Open;
+
+    public static bool isAnswer = false;  // 정답의 유무를 체크하는 플래그 변수
 
     void Update()
     {
-        if (this.isAnswer)   // 정답이 맞다면
+        if (isAnswer)   // 정답이 맞다면
         {
             return;     // 밑의 코드를 실행하지 않음
         }
@@ -25,11 +27,13 @@ public class GreenAlphabetDirector : MonoBehaviour  // Room2에 있는 초록색 상자�
         {
             print("정답");
 
+            GameDirector.zoomedObject = "Green_Box_Open";
+
             this.openDoor.SetActive(true);   // 열린 상자 이미지 활성화
             this.hammer.SetActive(true);        // 열쇠 모습 활성화
             this.closeDoor.SetActive(false); // 닫힌 상자 이미지 비활성화
 
-            this.isAnswer = true;
+            isAnswer = true;
             // 다시 업데이트 메서드로 들어왔을 때, 같은 작업을 반복하지 않게 막아주는 용도의 플래그 변수를 true로 변경
         }
     }

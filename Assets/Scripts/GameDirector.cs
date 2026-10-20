@@ -132,12 +132,11 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
     public void OnBackButton() // 뒤로 가기 버튼을 클릭했을 때 활성화되는 메서드
     {
         print("뒤로 가기 버튼 활성화");
+
         print(zoomedObject);
+
         GameObject.Find(zoomedObject).GetComponent<BoxCollider2D>().enabled = true;
         // 비활성화 했던 콜라이더 다시 활성화
-
-        /*GameObject.Find("ZoomColorPuzzle").GetComponent<BoxCollider2D>().enabled = true;
-        GameObject.Find("ZoomBagCollider").GetComponent<BoxCollider2D>().enabled = true;*/
 
 
         this.cameraMain.transform.position = new Vector3(0, 0, -10);   // 카메라 원위치로 다시 되돌리기
