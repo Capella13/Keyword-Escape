@@ -58,8 +58,8 @@ public class ZoomController : MonoBehaviour // 오브젝트를 줌인해주는 메서드
             !GameDirector.zoomedObject.Equals("Frames") && !GameDirector.zoomedObject.Equals("Green_Frame2") &&
             !GameDirector.zoomedObject.Equals("Red_Clock") && !GameDirector.zoomedObject.Equals("Globe"))
         // 같은 위치에 콜라이더가 2개 겹쳐있는 오브젝트들은 바깥쪽 줌용 콜라이더를 비활성화해야
-        // 안쪽 콜라이더와 겹침 문제를 해결할수 있지만 같은 위치에 콜라이더가 겹쳐있지 않은 오브젝트들은
-        // 바깥쪽 줌용 콜라이더를 비활성할 필요가 없을뿐더러 비활성할 경우 줌인 후
+        // 안쪽 콜라이더와 겹침 문제를 해결할 수 있지만, 같은 위치에 콜라이더가 겹쳐있지 않은 오브젝트들은
+        // 바깥쪽 줌용 콜라이더를 비활성화 할 필요가 없을 뿐더러, 비활성화 할 경우 줌인 후
         // 또다시 다른 오브젝트 줌 시 콜라이더가 비활성 상태로 남게 되어 다시 줌이 되지 않기 때문에 콜라이더 비활성 처리를 하지 않는다.
         {
             GetComponent<BoxCollider2D>().enabled = false; 
