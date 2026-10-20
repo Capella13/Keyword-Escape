@@ -155,7 +155,6 @@ public class ItemController : MonoBehaviour
         else if (gameObject.CompareTag("NoteM"))
         {
             isGotM = true;          // Key_Note_M을 획득했음을 체크하는 플래그 변수를 true로 변경
-
         }
             Destroy(this.gameObject);   // 클릭한 게임 오브젝트 삭제
     }

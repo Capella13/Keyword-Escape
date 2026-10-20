@@ -33,11 +33,12 @@ TagManager:
   - Hammer
   - NoteL
   - NoteU
-  - LoteM
   - BlackClock
   - Book
   - GGM
   - RedClock
+  - Dark
+  - NoteM
   layers:
   - Default
   - TransparentFX

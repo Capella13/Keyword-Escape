@@ -34,16 +34,17 @@ public class HintController : MonoBehaviour
         else if (gameObject.CompareTag("Lock")) // 만약 태그가 Lock일 때
             // Lock : 가지고 있는 아이템이나 단서들을 조합하여 잠긴 것을 열 수 있는 오브젝트일 때
         {
-            this.hintText.text = "드라이버로 열 수 있을 것 같다.";
+            this.hintText.text = "아이템이나 단서를 통해 열 수 있을 것 같다.";
         }
         else if (gameObject.CompareTag("Break")) // 만약 태그가 Break일 때
             // Break : 망치 아이템을 사용하여 오브젝트를 클릭했을 때 깨질 수 있는 오브젝트일 때
         {
             this.hintText.text = "망치로 깨트릴 수 있을 것 같다.";
         }
-        else if (gameObject.CompareTag("HintText"))
+        else if (gameObject.CompareTag("Dark")) // 만약 태그가 Dark일 때
+            // Dark : Room2에 있는 벽난로 오브젝트일 때
         {
-            this.hintText.text = "힌트가 되는 문구가 쓰여있다.";
+            this.hintText.text = "너무 어두워서 안이 보이지 않는다.";
         }
         else if (gameObject.CompareTag("KeyBox")) // 만약 태그가 KeyBox일 때
             // KeyBox : 열쇠가 들어있는 박스일 때. 문 왼쪽에 있는 박스를 의미한다.
@@ -61,14 +62,16 @@ public class HintController : MonoBehaviour
             }
         }
         else if (gameObject.CompareTag("BlackClock")) // 만약 태그가 BlackClock일 때
+            // BlackClock : Lobby에 있는 검은 시계 오브젝트일 때
         {
             this.hintText.text = "이 검은 시계는 4시 13분 26초를 가리키고 있다.";
         }
         else if (gameObject.CompareTag("RedClock")) // 만약 태그가 RedClock일 때
+            // RedClock : Room3에 있는 빨간 시계 오브젝트일 때
         {
             this.hintText.text = "이 빨간 시계는 2시 24분 35초를 가리키고 있다.";
         }
-        else
+        else // 태그가 Untagged일 때, 즉 태그가 없는 오브젝트를 클릭했을 때
         {
             this.hintText.text = "여기에는 아무것도 없는 것 같다.";
         }
