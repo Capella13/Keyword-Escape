@@ -24,8 +24,53 @@ public class ItemController : MonoBehaviour
     private void Start()
     {
         if (isGotKey && gameObject.CompareTag("Key"))
+            // 현재 키를 얻은 상태와 씬에서 Key 태그를 가진 오브젝트(Key)가 존재의 유무가 같다면
         {
-            Destroy(this.gameObject);   // 클릭한 게임 오브젝트 삭제
+            Destroy(this.gameObject);   // 게임 오브젝트 삭제
+        }
+        else if (isGotMorse && gameObject.CompareTag("Morse"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotDriver && gameObject.CompareTag("Driver"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotFlash && gameObject.CompareTag("Flash"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotBattery && gameObject.CompareTag("Battery"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotGreenNote1 && gameObject.CompareTag("Green_Note_1"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotGreenNote2 && gameObject.CompareTag("Green_Note_2"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotHammer && gameObject.CompareTag("Hammer"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotL && gameObject.CompareTag("Key_Note_L"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotU && gameObject.CompareTag("Key_Note_U"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotG && gameObject.CompareTag("Key_Note_G"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (isGotM && gameObject.CompareTag("Key_Note_M"))
+        {
+            Destroy(this.gameObject);
         }
 
         items = new GameObject[12];    // 배열 인스턴스 생성
@@ -63,12 +108,55 @@ public class ItemController : MonoBehaviour
                 break; // 이미지가 1개만 들어가게 반복문 탈출해야 한다.
             }
         }
-        if (gameObject.CompareTag("Key"))
+        if (gameObject.CompareTag("Key"))   // 현재 얻은 아이템이 Key라면
         {
-            isGotKey = true;    // 
+            isGotKey = true;    // Key를 획득했음을 체크하는 플래그 변수를 true로 변경
         }
-        
+        else if (gameObject.CompareTag("Morse"))
+        {
+            isGotMorse = true;  // Morse-Code-Table을 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Driver"))
+        {
+            isGotDriver = true; // Driver를 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Flash"))
+        {
+            isGotFlash = true;  // Flash를 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Battery"))
+        {
+            isGotBattery = true;    // Battery를 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Green_Note_1"))
+        {
+            isGotGreenNote1 = true; // Green_Note_1을 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Green_Note_2"))
+        {
+            isGotGreenNote2 = true; // Green_Note_2을 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Hammer"))
+        {
+            isGotHammer = true;     // Hammer를 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Key_Note_L"))
+        {
+            isGotL = true;          // Key_Note_L을 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Key_Note_U"))
+        {
+            isGotU = true;          // Key_Note_U을 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Key_Note_G"))
+        {
+            isGotG = true;          // Key_Note_G을 획득했음을 체크하는 플래그 변수를 true로 변경
+        }
+        else if (gameObject.CompareTag("Key_Note_M"))
+        {
+            isGotM = true;          // Key_Note_M을 획득했음을 체크하는 플래그 변수를 true로 변경
 
-        Destroy(this.gameObject);   // 클릭한 게임 오브젝트 삭제
+        }
+            Destroy(this.gameObject);   // 클릭한 게임 오브젝트 삭제
     }
 }
