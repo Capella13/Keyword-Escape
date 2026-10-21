@@ -56,7 +56,8 @@ public class ZoomController : MonoBehaviour // 오브젝트를 줌인해주는 메서드
             !GameDirector.zoomedObject.Equals("Cleaning-tools-Item") && !GameDirector.zoomedObject.Equals("Chair_1") &&
             !GameDirector.zoomedObject.Equals("Light1") && !GameDirector.zoomedObject.Equals("Plant") &&
             !GameDirector.zoomedObject.Equals("Frames") && !GameDirector.zoomedObject.Equals("Green_Frame2") &&
-            !GameDirector.zoomedObject.Equals("Red_Clock") && !GameDirector.zoomedObject.Equals("Globe"))
+            !GameDirector.zoomedObject.Equals("Red_Clock") && !GameDirector.zoomedObject.Equals("Globe") &&
+            !GameDirector.zoomedObject.Equals("Book_Open"))
         // 같은 위치에 콜라이더가 2개 겹쳐있는 오브젝트들은 바깥쪽 줌용 콜라이더를 비활성화해야
         // 안쪽 콜라이더와 겹침 문제를 해결할 수 있지만, 같은 위치에 콜라이더가 겹쳐있지 않은 오브젝트들은
         // 바깥쪽 줌용 콜라이더를 비활성화 할 필요가 없을 뿐더러, 비활성화 할 경우 줌인 후

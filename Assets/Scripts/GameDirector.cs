@@ -17,6 +17,8 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
 
     [SerializeField] GameObject[] detailItems;  // 아이템은 총 12가지 이므로 배열로 여러 개 선언.
 
+    public static bool isDetailClose = false; // 아이템 자세히 보기 닫기 버튼을 눌렀는지 확인하는 변수
+
     public static string zoomedObject;  // 줌인한 오브젝트의 이름
 
     public void RChangeScene() // 오른쪽 장면 넘기는 화살표 버튼을 눌렀을 때 활성화되는 메서드
@@ -30,6 +32,8 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
 
     public void OnDetailButton() // 자세히 보기 버튼을 눌렀을 때 활성화되는 메서드
     {
+        isDetailClose = false; // 아이템 자세히 보기 닫기 버튼을 눌렀는지 확인하는 변수 초기화
+
         if (ActiveItem.selectItem.GetComponent<Image>().sprite != null) // 만일 선택된 아이템이 없다면 실행하지 않기
         {
             this.detailBg.SetActive(true);      // 아이템의 반투명 배경 활성화하기
@@ -122,6 +126,9 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
     {
         this.detailBg.SetActive(false);     // 자세히 보기 버튼을 누르면 나오는 아이템의 반투명 배경 비활성화 (모습 숨기기)
         this.closeButton.SetActive(false);  // 자세히 보기 닫기 버튼 비활성화 (모습 숨기기)
+
+        isDetailClose = true; // 아이템 자세히 보기 닫기 버튼을 눌렀음을 체크하는 플래그 변수를 true로 변경
+        /// 이 플래그 변수는 BookController.cs에서 사용된다. (책을 읽고 난 후, 책을 닫았는지 확인하기 위해서)
 
         for (int i = 0; i < detailItems.Length; i++) // 자세히 보기로 띄워져있는 아이템 전부 반복문으로 둘러보기
         {

@@ -13,6 +13,11 @@ public class BreakController : MonoBehaviour // 꽃병이나 컵이나 벽을 깨트리게 하
             .GetComponent<Image>().sprite;
         // 인벤토리 목록에서 선택한 아이템의 이미지를 찾기
 
+        if (selectSprite == null) // 선택한 아이템이 없으면
+        {
+            return; // 아무것도 하지 않고 종료
+        }
+
         if (selectSprite.name.Equals("Hammer")) // 현재 선택된 아이템이 Hammer라면
         {
             gameObject.SetActive(false); // 깨지지 않은 오브젝트(=본인) 비활성화 
