@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Items_2_0
+      name: Red_Simple-Tutorial
       rect:
         serializedVersion: 2
         x: 170
@@ -105,7 +105,7 @@ TextureImporter:
         width: 237
         height: 253
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_2_1
+      name: Book_Open
       rect:
         serializedVersion: 2
         x: 456
@@ -126,7 +126,7 @@ TextureImporter:
         width: 795
         height: 468
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_2_2
+      name: Red_Clock
       rect:
         serializedVersion: 2
         x: 1318
@@ -147,7 +147,7 @@ TextureImporter:
         width: 183
         height: 251
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_2_3
+      name: Switch_Open
       rect:
         serializedVersion: 2
         x: 1599
@@ -168,7 +168,7 @@ TextureImporter:
         width: 151
         height: 151
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_2_4
+      name: Oulet_Open
       rect:
         serializedVersion: 2
         x: 1599
@@ -189,7 +189,7 @@ TextureImporter:
         width: 133
         height: 223
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,11 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Items_2_0: 748131984
-      Items_2_1: -912767306
-      Items_2_2: -1835329994
-      Items_2_3: 422136746
-      Items_2_4: -817824051
+      Book_Open: -912767306
+      Oulet_Open: -817824051
+      Red_Clock: -1835329994
+      Red_Simple-Tutorial: 748131984
+      Switch_Open: 422136746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
