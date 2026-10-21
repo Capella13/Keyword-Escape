@@ -5317,7 +5317,7 @@ GameObject:
   - component: {fileID: 1269695015}
   m_Layer: 0
   m_Name: Key_Note_M
-  m_TagString: Untagged
+  m_TagString: NoteM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

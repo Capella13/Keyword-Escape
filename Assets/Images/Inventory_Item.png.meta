@@ -286,7 +286,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Green_Note_1
+      name: Green_Note_0
       rect:
         serializedVersion: 2
         x: 261
@@ -307,7 +307,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Green_Note_2
+      name: Green_Note_1
       rect:
         serializedVersion: 2
         x: 543
@@ -361,8 +361,8 @@ TextureImporter:
     nameFileIdTable:
       Battery: 1334480808
       Flashlight: 769666796
-      Green_Note_1: 206210842
-      Green_Note_2: -340026611
+      Green_Note_0: 206210842
+      Green_Note_1: -340026611
       Hammer: 1680450904
       Inventory_Item_9: 256009109
       Key: -1731072783
