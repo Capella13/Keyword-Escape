@@ -13,7 +13,7 @@ public class KeepCanvas : MonoBehaviour // 캔버스가 가지고 있는 스크립트
         if (instance == null)   // instance 필드가 참조하는 KeepCanvas 인스턴스가 없을 때
         {
             instance = this;
-            // instance 필드가 이 클래스(KeepCamera 클래스) 인스턴스(this)를 참조하도록 한다.
+            // instance 필드가 이 클래스(KeepCanvas 클래스) 인스턴스(this)를 참조하도록 한다.
 
             DontDestroyOnLoad(gameObject); // 씬이 바뀌어도 싱글톤 인스턴스가 사라지지 않게 해준다.
         }
