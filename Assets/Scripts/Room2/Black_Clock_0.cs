@@ -16,6 +16,15 @@ public class Black_Clock_0 : MonoBehaviour  // Room2¿¡ ÀÖ´Â °ËÀº ½Ã°è ÆÛÁñ¿¡ »ç¿
     [SerializeField] GameObject openDoor;  // Safe ¹® ¿­·ÁÀÖ´Â ¸ð½À ¿ÀºêÁ§Æ®
     [SerializeField] GameObject keyNoteG;  // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ®
 
+    //###########
+    AudioSource audioSource;
+    [SerializeField] AudioClip dial;
+    [SerializeField] AudioClip ureka;
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void OnMouseDown() // ÀÌ ½ºÅ©¸³Æ® ¿ÀºêÁ§Æ®ÀÇ ÄÝ¶óÀÌ´õ ³»¿¡¼­ ¸¶¿ì½º Å¬¸¯½Ã
     {
         mouseInit = Input.mousePosition; // µå·¡±× ½ÃÀÛ À§Ä¡
@@ -97,6 +106,10 @@ public class Black_Clock_0 : MonoBehaviour  // Room2¿¡ ÀÖ´Â °ËÀº ½Ã°è ÆÛÁñ¿¡ »ç¿
 
     void rotateWheel(float ang)     // È¸ÀüÇÏ´Â ¸Þ¼­µå
     {
+        //###########
+        audioSource.PlayOneShot(dial);
+
+
         transform.Rotate(new Vector3(0, 0, ang)); // ¿ÀºêÁ§Æ® È¸Àü
         nowAngle = nowAngle + ang; // ÇöÀç ÈÙÀÇ È¸Àü À§Ä¡ °»½Å
 
@@ -123,6 +136,9 @@ public class Black_Clock_0 : MonoBehaviour  // Room2¿¡ ÀÖ´Â °ËÀº ½Ã°è ÆÛÁñ¿¡ »ç¿
             FindObjectOfType<Black_Clock_2>().step == 26) // Á¤´ä : 4, 13, 26
         {
             print("Á¤´ä");
+
+            //###########
+            audioSource.PlayOneShot(ureka);
 
             this.openDoor.SetActive(true); // ¹® ¿­¸° ¸ð½À È°¼ºÈ­
             this.keyNoteG.SetActive(true); // ÂÊÁö G ¿ÀºêÁ§Æ® È°¼ºÈ­

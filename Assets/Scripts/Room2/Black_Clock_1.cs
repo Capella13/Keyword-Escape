@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Black_Clock_1 : MonoBehaviour
@@ -15,6 +16,15 @@ public class Black_Clock_1 : MonoBehaviour
 
     [SerializeField] GameObject openDoor;  // Safe 문 열려있는 모습 오브젝트
     [SerializeField] GameObject keyNoteG;  // 쪽지 G가 들어있는 오브젝트
+
+    //###########
+    AudioSource audioSource;
+    [SerializeField] AudioClip dial;
+    [SerializeField] AudioClip ureka;
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void OnMouseDown() //이 스크립트 오브젝트의 콜라이더 내에서 마우스 클릭시
     {
@@ -97,6 +107,9 @@ public class Black_Clock_1 : MonoBehaviour
 
     void rotateWheel(float ang)
     {
+        //###########
+        audioSource.PlayOneShot(dial);
+
         transform.Rotate(new Vector3(0, 0, ang)); //오브젝트 회전
         nowAngle = nowAngle + ang; //현재 휠의 회전위치 갱신
 
@@ -123,6 +136,9 @@ public class Black_Clock_1 : MonoBehaviour
             FindObjectOfType<Black_Clock_2>().step == 26)
         {
             print("정답");
+
+            //###########
+            audioSource.PlayOneShot(ureka);
 
             this.openDoor.SetActive(true); // 문 열린 모습 활성화
             this.keyNoteG.SetActive(true); // 쪽지 G 오브젝트 활성화

@@ -13,13 +13,21 @@ public class GreenAlphabetDirector : MonoBehaviour  // Room2에 있는 초록색 상자�
 
     public static bool isAnswer = false;  // 정답의 유무를 체크하는 플래그 변수
 
+    //###########
+    AudioSource audioSource;
+    [SerializeField] AudioClip boxopen;
+
     private void Start()
     {
+        //###########
+        audioSource = GetComponent<AudioSource>();
+
         //***********
         if (isAnswer)
         {
             GameObject.Find("Green-Box").SetActive(false);
             Green_Box_Open.SetActive(true);
+
         }
     }
 
@@ -36,6 +44,9 @@ public class GreenAlphabetDirector : MonoBehaviour  // Room2에 있는 초록색 상자�
             this.selectAlphabets[3].GetComponent<Alphabet_Puzzle>().now == 4) // 답이 GAME 일 때
         {
             print("정답");
+
+            //###########
+            audioSource.PlayOneShot(boxopen);
 
             GameDirector.zoomedObject = "Green_Box_Open";
 

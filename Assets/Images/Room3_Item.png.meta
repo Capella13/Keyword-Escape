@@ -391,6 +391,27 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Red_Clock
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 245
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f05a47bc0e5d6e49b52d29dc88c78c9
+      internalID: 1335300669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Cup
       rect:
         serializedVersion: 2
