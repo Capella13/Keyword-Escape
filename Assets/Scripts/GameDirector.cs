@@ -18,6 +18,8 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
     [SerializeField] GameObject[] detailItems;  // 아이템은 총 12가지 이므로 배열로 여러 개 선언.
 
     public static string zoomedObject;  // 줌인한 오브젝트의 이름
+    public static bool isDetailClose = false;   // 자세히 보기 닫기 버튼을 클릭했는가의 유무
+    /// BookController.cs에서 사용
 
     public void RChangeScene() // 오른쪽 장면 넘기는 화살표 버튼을 눌렀을 때 활성화되는 메서드
     {
@@ -30,6 +32,8 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
 
     public void OnDetailButton() // 자세히 보기 버튼을 눌렀을 때 활성화되는 메서드
     {
+        isDetailClose = false; // 자세히 보기 버튼을 클릭했을 때 닫기 버튼이 뜨므로 초기화 해주기
+
         if (ActiveItem.selectItem.GetComponent<Image>().sprite != null) // 만일 선택된 아이템이 없다면 실행하지 않기
         {
             this.detailBg.SetActive(true);      // 아이템의 반투명 배경 활성화하기
@@ -120,6 +124,9 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
 
     public void OnDetailCloseButton() // 자세히 보기 닫기 버튼(DetailCloseButton)을 클릭했을 때 활성화되는 메서드
     {
+        isDetailClose = true; // 닫기 버튼이 클릭되었다는 의미
+        /// BookController.cs에서 이 코드를 사용
+
         this.detailBg.SetActive(false);     // 자세히 보기 버튼을 누르면 나오는 아이템의 반투명 배경 비활성화 (모습 숨기기)
         this.closeButton.SetActive(false);  // 자세히 보기 닫기 버튼 비활성화 (모습 숨기기)
 
@@ -133,8 +140,6 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
     {
         print("뒤로 가기 버튼 활성화");
 
-        print(zoomedObject);
-
         /*GameObject.Find(zoomedObject).GetComponent<BoxCollider2D>().enabled = true;
         // 비활성화 했던 콜라이더 다시 활성화*/
 
@@ -144,9 +149,12 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
             GameObject.Find(zoomedObject).GetComponent<BoxCollider2D>().enabled = true;
             // 비활성화 했던 콜라이더 다시 활성화
         }*/
+
+
         //$$$$$$$$$$$$$$$$1현재씬에 있는 모든 Box 콜라이더 활성화
+
         BoxCollider2D[] sceneColliders = FindObjectsOfType<BoxCollider2D>();
-        for(int i=0; i < sceneColliders.Length; i++)
+        for (int i=0; i < sceneColliders.Length; i++)
         {
             sceneColliders[i].enabled = true;
         }

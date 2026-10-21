@@ -14,6 +14,14 @@ public class Keypad_2_Room3 : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    private void Update()   // 계속 정답인지 체크해야하므로 Update() 메서드 사용
+    {
+        if (FindObjectOfType<KeypadDirector_Room3>().isOpen)    // 만일 정답이라면 = 문이 열렸다면
+        {
+            gameObject.SetActive(false);    // 콜라이더 겹칩 방지로 인해 모습 비활성화
+        }
+    }
+
     private void OnMouseDown()  // 2번 키패드가 클릭되었을 때 호출되는 메서드
     {
         if (FindObjectOfType<KeypadDirector_Room3>().isInput) // 현재 KeypadDirector가 입력 상태(true)인지 확인

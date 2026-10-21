@@ -10,12 +10,14 @@ public class KeepSoundManager : MonoBehaviour // 캔버스가 가지고 있는 스크립트
 
     private void Awake() // Start()보다 일찍 시작되는 이벤트 메서드
     {
-        if (instance == null)   // 만일 현재 만들어진 KeepSoundManager 인스턴스가 없다면
+        if (instance == null)   // instance 필드가 참조하는 KeepSoundManager 인스턴스가 없을 때
         {
-            instance = this;  // 인스턴스 생성
+            instance = this;
+            // instance 필드가 이 클래스(KeepCamera 클래스) 인스턴스(this)를 참조하도록 한다.
+
             DontDestroyOnLoad(gameObject); // 씬이 바뀌어도 싱글톤 인스턴스가 사라지지 않게 해준다.
         }
-        else   // 만일 현재 만들어진 KeepSoundManager 인스턴스가 있다면
+        else   // 만일 instance 필드가 참조하는 KeepSoundManager 인스턴스가 있을 때
         {
             Destroy(gameObject);    // 지금 만들려고 하는 인스턴스 삭제하기
         }

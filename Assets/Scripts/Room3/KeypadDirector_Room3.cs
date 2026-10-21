@@ -12,6 +12,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
     [SerializeField] GameObject flash;    // ¼ÕÀüµî ¿ÀºêÁ§Æ®
 
     public bool isInput = true;  // ÀÔ·Â °¡´É ¿©ºÎ
+    public bool isOpen = false;  // Á¤´ä ¿©ºÎ
 
     void Update()
     {
@@ -52,6 +53,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
@@ -93,6 +95,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
@@ -134,6 +137,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
@@ -175,6 +179,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
@@ -216,6 +221,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
@@ -257,6 +263,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
@@ -298,6 +305,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
@@ -339,6 +347,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
@@ -380,6 +389,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
@@ -421,6 +431,7 @@ public class KeypadDirector_Room3: MonoBehaviour    // Room3¿¡ ÀÖ´Â Å°ÆÐµå ¾ÏÈ£¸
                     {
                         print("Á¤´ä");
 
+                        isOpen = true; // ¹®ÀÌ ¿­·È´Ù´Â °Í(Á¤´äÀÌ¶ó´Â °Í)À» ¾Ë¸®±â
                         this.openDoor.SetActive(true);  // ¹®ÀÌ ¿­·Á ÀÖ´Â ¿ÀºêÁ§Æ® È°¼ºÈ­ (¹® ¿­±â)
                         this.flash.SetActive(true);     // ¼ÕÀüµî ¿ÀºêÁ§Æ® È°¼ºÈ­
                     }
