@@ -10,7 +10,7 @@ public class FireplaceController : MonoBehaviour
 
     private void OnMouseDown() // 오브젝트를 클릭하면 실행되는 메서드
     {
-        if (selectSprite != null)   // 만일 선택된 아이템이 없다면
+        if (selectSprite != null)
         {
             selectSprite = ItemController.items[ActiveItem.selectItemIndex]
             .GetComponent<Image>().sprite;

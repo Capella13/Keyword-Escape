@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Safe_Open
+      name: Safe_Close
       rect:
         serializedVersion: 2
         x: 46
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Safe_Close
+      name: Safe_Open
       rect:
         serializedVersion: 2
         x: 295
@@ -534,8 +534,8 @@ TextureImporter:
       Light_head: 213344974
       M: 1022486702
       Red_Clock: -1634687337
-      Safe_Close: 1351565391
-      Safe_Open: 487172246
+      Safe_Close: 487172246
+      Safe_Open: 1351565391
       TV_Cabinet: -2143342339
       Wall_Broke: 333911614
   mipmapLimitGroupName: 

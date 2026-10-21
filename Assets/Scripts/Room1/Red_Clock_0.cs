@@ -131,8 +131,8 @@ public class Red_Clock_0 : MonoBehaviour  // Room1¿¡ ÀÖ´Â »¡°£ ½Ã°è ÆÛÁñ¿¡ »ç¿ëÇ
 
         print("ÇöÀç ´«±Ý°ª : " + step);
 
-        if (this.step == 4 && FindObjectOfType<Black_Clock_1>().step == 13 &&
-            FindObjectOfType<Black_Clock_2>().step == 26) // Á¤´ä : 4, 13, 26
+        if (step == 2 && FindObjectOfType<Red_Clock_1>().step == 24 &&
+            FindObjectOfType<Red_Clock_2>().step == 35) // Á¤´ä : 2, 24, 35
         {
             print("Á¤´ä");
 
