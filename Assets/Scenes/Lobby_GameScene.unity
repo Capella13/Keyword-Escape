@@ -459,8 +459,8 @@ GameObject:
   - component: {fileID: 39517833}
   - component: {fileID: 39517832}
   - component: {fileID: 39517831}
-  - component: {fileID: 39517830}
   - component: {fileID: 39517834}
+  - component: {fileID: 39517830}
   m_Layer: 0
   m_Name: Key_TEST
   m_TagString: Key
@@ -526,7 +526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSprite: {fileID: 1203375070, guid: 79e9465d3a9ad164589e6f67615bbeb3, type: 3}
-  pickUp: {fileID: 8300000, guid: 6cd59321ef22dd5459f0f4aa6e004d48, type: 3}
 --- !u!212 &39517832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -605,7 +604,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1486,7 +1485,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSprite: {fileID: -939722037, guid: a49d2eb9a7f1bde4d8f24716a697ea44, type: 3}
-  pickUp: {fileID: 8300000, guid: 6cd59321ef22dd5459f0f4aa6e004d48, type: 3}
 --- !u!61 &167431620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1658,7 +1656,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 13947f75d3925d34f9bdadd7cf5ee551, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5773,7 +5771,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSprite: {fileID: 1203375070, guid: 79e9465d3a9ad164589e6f67615bbeb3, type: 3}
-  pickUp: {fileID: 8300000, guid: 6cd59321ef22dd5459f0f4aa6e004d48, type: 3}
 --- !u!61 &1025747192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9196,7 +9193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSprite: {fileID: -331752563, guid: a49d2eb9a7f1bde4d8f24716a697ea44, type: 3}
-  pickUp: {fileID: 8300000, guid: 6cd59321ef22dd5459f0f4aa6e004d48, type: 3}
 --- !u!61 &1700893893
 BoxCollider2D:
   m_ObjectHideFlags: 0
