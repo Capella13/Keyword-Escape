@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -32,8 +30,8 @@ public class ZoomController : MonoBehaviour // 오브젝트를 줌인해주는 메서드
     private void OnMouseDown()  // 줌인할 오브젝트를 클릭했을 때 활성화 되는 메서드
     {
         if (EventSystem.current.IsPointerOverGameObject())
-            // 게임 오브젝트와 UI의 위치가 겹쳐 있을 때, UI의 버튼에 마우스 커서가 올려져 있으면 (클릭하면)
-            // 게임 오브젝트의 OnMouseDown이 처리되지 않도록 함.
+        // 게임 오브젝트와 UI의 위치가 겹쳐 있을 때, UI의 버튼에 마우스 커서가 올려져 있으면 (클릭하면)
+        // 게임 오브젝트의 OnMouseDown이 처리되지 않도록 함.
         {
             return; // 리턴하기 (이 이하 코드 실행하지 않기)
         }
@@ -51,22 +49,30 @@ public class ZoomController : MonoBehaviour // 오브젝트를 줌인해주는 메서드
             !GameDirector.zoomedObject.Equals("Books_4") && !GameDirector.zoomedObject.Equals("Boxs_2") &&
             !GameDirector.zoomedObject.Equals("Books_1") && !GameDirector.zoomedObject.Equals("Boxs_1") &&
             !GameDirector.zoomedObject.Equals("Books_2") && !GameDirector.zoomedObject.Equals("Chair_0") &&
-            !GameDirector.zoomedObject.Equals("Pot3") && !GameDirector.zoomedObject.Equals("Pot4") &&
+            !GameDirector.zoomedObject.Equals("Pot3") && !GameDirector.zoomedObject.Equals("Pot4_Room2") &&
             !GameDirector.zoomedObject.Equals("Green_Frame") && !GameDirector.zoomedObject.Equals("Image-Frame") &&
             !GameDirector.zoomedObject.Equals("Cleaning-tools-Item") && !GameDirector.zoomedObject.Equals("Chair_1") &&
             !GameDirector.zoomedObject.Equals("Light1") && !GameDirector.zoomedObject.Equals("Plant") &&
             !GameDirector.zoomedObject.Equals("Frames") && !GameDirector.zoomedObject.Equals("Green_Frame2") &&
-            !GameDirector.zoomedObject.Equals("Red_Clock") && !GameDirector.zoomedObject.Equals("Globe"))
+            !GameDirector.zoomedObject.Equals("Red_Clock") && !GameDirector.zoomedObject.Equals("Globe") &&
+            !GameDirector.zoomedObject.Equals("Pot1") && !GameDirector.zoomedObject.Equals("Globe"))
         // 같은 위치에 콜라이더가 2개 겹쳐있는 오브젝트들은 바깥쪽 줌용 콜라이더를 비활성화해야
         // 안쪽 콜라이더와 겹침 문제를 해결할 수 있지만, 같은 위치에 콜라이더가 겹쳐있지 않은 오브젝트들은
         // 바깥쪽 줌용 콜라이더를 비활성화 할 필요가 없을 뿐더러, 비활성화 할 경우 줌인 후
         // 또다시 다른 오브젝트 줌 시 콜라이더가 비활성 상태로 남게 되어 다시 줌이 되지 않기 때문에 콜라이더 비활성 처리를 하지 않는다.
         {
-            GetComponent<BoxCollider2D>().enabled = false; 
+            GetComponent<BoxCollider2D>().enabled = false;
             // 줌인한 오브젝트의 뒤에 있는 일부 오브젝트가 줌인한 오브젝트의 콜리이더 때문에 선택이 안 되는 경우가 존재하여
             // 줌인한 오브젝트의 콜라이더 제거
         }
 
+        if (GameDirector.zoomedObject.Equals("Pot4_Room2")) // 만약 Room2에 있는 Pot4_Room2 오브젝트를 줌인했다면
+        {
+            GameObject.Find("Special_Book").GetComponent<BoxCollider2D>().enabled = false;
+            // Special_Book 오브젝트의 콜라이더를 비활성화 시켜서 Sepcial_Book 오브젝트가 줌인되지 않도록 한다.
+            // 옆에 있는 화분을 줌인한 상태에서 Special_Book 오브젝트를 줌인하면
+            // Book_Open 오브젝트가 활성화 되며 뒤로 가기 버튼을 누를 수도 없고 닫기 버튼을 누를 수도 없는 상황이 발생하기 때문.
+        }
 
         this.cameraMain.transform.position = new Vector3(this.transform.position.x + this.leftSet,
             this.transform.position.y, -10);
