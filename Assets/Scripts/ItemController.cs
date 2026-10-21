@@ -8,6 +8,9 @@ public class ItemController : MonoBehaviour
     [SerializeField] Sprite newSprite;      // Inspector에서 Image의 Source Image로 들어가야 할 필드
     public static GameObject[] items;       // Hierarchy에 있는 inventory
 
+    /*AudioSource audioSource;    // 오디오 소스 컴포넌트를 찾기 위한 필드
+    [SerializeField] AudioClip pickUp;   // 아이템을 얻었을 때 나는 소리 (pop)*/
+
     public static bool isGotKey = false;        // 
     public static bool isGotMorse = false;
     public static bool isGotDriver = false;
@@ -23,6 +26,8 @@ public class ItemController : MonoBehaviour
 
     private void Start()
     {
+        //audioSource = GetComponent<AudioSource>();  // 오디오 소스 컴포넌트 찾기
+
         if (isGotKey && gameObject.CompareTag("Key"))
             // 현재 키를 얻은 상태와 씬에서 Key 태그를 가진 오브젝트(Key)가 존재의 유무가 같다면
         {
@@ -94,6 +99,12 @@ public class ItemController : MonoBehaviour
                                // 단, 게임오브젝트가 Collider를 가지고 있어야 하며,
                                // 카메라의 이름이 MainCamera여야 한다.
     {
+        //audioSource.PlayOneShot(pickUp);  
+        /*AudioSource.PlayClipAtPoint(pickUp, transform.position, 100);  // 아이템 얻을 때 나는 소리 재생
+        // PlayClipAtPoint() : 오브젝트가 삭제되어도 소리가 끊기지 않고 재생되는 메서드
+        // 소리가 끝나면 자동으로 오디오 소스가 삭제됨
+        // (아이템 오브젝트가 거의 동시에 삭제되므로 PlayOneShot()을 사용하면 소리가 안 남)*/
+        /// 근데 소리가 너무 작아서 포기함.. 들리긴 들림
 
         for (int i = 0; i < items.Length; i++) // Image UI(아이템 저장 목록)중에서 비어있는 부분에 차례대로
                                                // 획득한 아이템 이미지를 추가하기 위하여 목록들의
@@ -108,6 +119,7 @@ public class ItemController : MonoBehaviour
                 break; // 이미지가 1개만 들어가게 반복문 탈출해야 한다.
             }
         }
+
         if (gameObject.CompareTag("Key"))   // 현재 얻은 아이템이 Key라면
         {
             isGotKey = true;    // Key를 획득했음을 체크하는 플래그 변수를 true로 변경
