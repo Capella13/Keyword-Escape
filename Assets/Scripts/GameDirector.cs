@@ -77,14 +77,14 @@ public class GameDirector : MonoBehaviour   // 전체적인 게임을 관리하며 여러가지
                 this.detailItems[4].SetActive(true);
                 // 배터리(Battery)의 자세히 보기 이미지 띄우기
             }
-            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Green_Note_1"))
-            // 만일 선택된 아이템이 초록색 쪽지(GreenNote1)라면
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Green_Note_0"))
+            // 만일 선택된 아이템이 초록색 쪽지(GreenNote0)라면
             {
                 this.detailItems[5].SetActive(true);
                 // 초록색 쪽지(GreenNote1)의 자세히 보기 이미지 띄우기
             }
-            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Green_Note_2"))
-            // 만일 선택된 아이템이 초록색 쪽지(GreenNote2)라면
+            else if (ActiveItem.selectItem.GetComponent<Image>().sprite.name.Equals("Green_Note_1"))
+            // 만일 선택된 아이템이 초록색 쪽지(GreenNote1)라면
             {
                 this.detailItems[6].SetActive(true);
                 // 초록색 쪽지(GreenNote2)의 자세히 보기 이미지 띄우기
