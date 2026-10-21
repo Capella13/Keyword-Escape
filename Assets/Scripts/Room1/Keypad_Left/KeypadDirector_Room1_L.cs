@@ -9,7 +9,7 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
     [SerializeField] Sprite[] nums;     // 숫자 스프라이트 이미지 배열 (10개)
     [SerializeField] GameObject[] positions;    // 정답 입력란에 있는 숫자의 위치 (4개)
     [SerializeField] GameObject openDoor; // 문이 열려 있는 오브젝트
-    [SerializeField] GameObject noteL;    // 쪽지 G가 들어있는 오브젝트
+    [SerializeField] GameObject greenNote;    // Green_Note_1이 들어있는 오브젝트
 
     public bool isInput = true;  // 입력 가능 여부
 
@@ -52,15 +52,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
 
                     this.count = 0;  // 현재가 세 번째 입력이므로 카운트 횟수를 다시 0으로 초기화
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else  // 오답일 경우
                     {
@@ -99,15 +99,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
                     // 정답 비교 코드 작성
                     this.count = 0;
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else  // 오답일 경우
                     {
@@ -146,15 +146,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
                     // 정답 비교 코드 작성
                     this.count = 0;
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else
                     {
@@ -193,15 +193,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
                     // 정답 비교 코드 작성
                     this.count = 0;
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else
                     {
@@ -240,15 +240,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
                     // 정답 비교 코드 작성
                     this.count = 0;
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else
                     {
@@ -288,15 +288,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
                     // 정답 비교 코드 작성
                     this.count = 0;
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else
                     {
@@ -335,15 +335,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
                     // 정답 비교 코드 작성
                     count = 0;
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else
                     {
@@ -382,15 +382,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
                     // 정답 비교 코드 작성
                     this.count = 0;
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else
                     {
@@ -429,15 +429,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
                     // 정답 비교 코드 작성
                     this.count = 0;
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else
                     {
@@ -476,15 +476,15 @@ public class KeypadDirector_Room1_L : MonoBehaviour    // Room1에 있는 키패드 암
                     // 정답 비교 코드 작성
                     this.count = 0;
 
-                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[1] &&
+                    if (this.positions[0].GetComponent<SpriteRenderer>().sprite == this.nums[0] &&
                         this.positions[1].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
-                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[3] &&
-                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[1]) // 정답 1231이 맞을 경우
+                        this.positions[2].GetComponent<SpriteRenderer>().sprite == this.nums[2] &&
+                        this.positions[3].GetComponent<SpriteRenderer>().sprite == this.nums[8]) // 정답 0228이 맞을 경우
                     {
                         print("정답");
 
                         this.openDoor.SetActive(true);   // 문이 열려 있는 오브젝트 활성화 시키기
-                        this.noteL.SetActive(true);    // 쪽지 G가 들어있는 오브젝트 활성화 시키기
+                        this.greenNote.SetActive(true);    // 초록색 힌트 1이 들어있는 오브젝트 활성화 시키기
                     }
                     else
                     {

@@ -29,7 +29,6 @@ TagManager:
   - Flash
   - Battery
   - Green_Note_1
-  - Green_Note_2
   - Hammer
   - NoteL
   - NoteU
@@ -39,6 +38,7 @@ TagManager:
   - RedClock
   - Dark
   - NoteM
+  - Green_Note_0
   layers:
   - Default
   - TransparentFX
