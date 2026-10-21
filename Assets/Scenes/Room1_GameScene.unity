@@ -6341,6 +6341,7 @@ GameObject:
   - component: {fileID: 1874556053}
   - component: {fileID: 1874556052}
   - component: {fileID: 1874556054}
+  - component: {fileID: 1874556055}
   m_Layer: 0
   m_Name: Red_Clock_Puzzle_1
   m_TagString: Untagged
@@ -6651,6 +6652,23 @@ PolygonCollider2D:
       - {x: -0.0175, y: -0.26999998}
       - {x: -0.018749999, y: -0.26874998}
   m_UseDelaunayMesh: 0
+--- !u!114 &1874556055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874556051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447d1b64d57805d4daba63b73dd4c66e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  step: 0
+  openDoor: {fileID: 0}
+  greenNote1: {fileID: 0}
+  dial: {fileID: 0}
+  open: {fileID: 0}
 --- !u!1 &1877717105
 GameObject:
   m_ObjectHideFlags: 0

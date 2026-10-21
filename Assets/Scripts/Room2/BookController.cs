@@ -8,9 +8,14 @@ public class BookController : MonoBehaviour
     GameObject closeButton;    // 닫기 버튼 찾기
     [SerializeField] GameObject bookOpen; // 책이 열려 있는 오브젝트
 
+    AudioSource audioSource;    // 오디오 소스 컴포넌트를 바인딩하기 위한 필드
+    [SerializeField] AudioClip paper; // 책 펼쳤을 때 재생될 오디오 클립
+
     private void Start()
     {
-        // 싱글톤 오브젝트를 바인딩([SerializeField]) 방법으로 찾을 때 못 찾는 경우가 있음. (유니티 버그 같음..)
+        this.audioSource = GetComponent<AudioSource>();  // 오디오 소스 컴포넌트 찾기
+
+        // 싱글톤 오브젝트를 바인딩([SerializeField]) 방법으로 찾을 때 못 찾는 경우가 있음.
         // 여기서도 이런 경우가 생겨서 바인딩 대신에 직접 찾는 방법을 사용했다.
 
         if (KeepCanvas.instance != null)    // 널 체크
@@ -20,8 +25,6 @@ public class BookController : MonoBehaviour
 
             this.closeButton = KeepCanvas.instance.gameObject.transform.Find("DetailCloseButton").gameObject;
             // 자식의 transform 컴포넌트 중에서 HintText 이라는 이름을 가지고 있는 자식 오브젝트를 찾는다.
-
-            print("closeButton : " + this.closeButton);
         }
     }
 
@@ -40,5 +43,7 @@ public class BookController : MonoBehaviour
         this.detailBg.SetActive(true);     // 아이템의 반투명 배경 활성화하기
         this.closeButton.SetActive(true);  // 아이템 자세히 보기 닫기 버튼 활성화 하기
         this.bookOpen.SetActive(true);     // 책이 열려 있는 오브젝트 활성화
+
+        this.audioSource.PlayOneShot(paper);   // 클릭했을 때 오디오 재생
     }
 }

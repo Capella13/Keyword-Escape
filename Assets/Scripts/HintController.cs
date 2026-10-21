@@ -71,6 +71,11 @@ public class HintController : MonoBehaviour
         {
             this.hintText.text = "이 빨간 시계는 2시 24분 35초를 가리키고 있다.";
         }
+        else if (gameObject.CompareTag("GGM")) // 만약 태그가 GGM일 때
+            // GGM : Room2에 있는 Image-Frame 오브젝트일 때
+        {
+            this.hintText.text = "경기게임마이스터고등학교의 로고이다. 어쩌면 게임 테마가 이와 관련 있지 않을까?";
+        }
         else // 태그가 Untagged일 때, 즉 태그가 없는 오브젝트를 클릭했을 때
         {
             this.hintText.text = "여기에는 아무것도 없는 것 같다.";

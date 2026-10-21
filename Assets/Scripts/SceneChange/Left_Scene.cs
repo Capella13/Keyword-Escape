@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Left_Scene : MonoBehaviour
 {
-    [SerializeField] string leftScene;
+    [SerializeField] string leftScene;  // ¿ŞÂÊ ¾À ÀÌ¸§
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(leftScene);
+        SceneManager.LoadScene(leftScene);  // ¿ŞÂÊ ¾ÀÀ¸·Î ÀÌµ¿
     }
 }

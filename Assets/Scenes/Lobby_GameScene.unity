@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1461,7 +1460,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d2067623e19ea0e44855685075459f69, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 13947f75d3925d34f9bdadd7cf5ee551, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1568,7 +1567,7 @@ Transform:
   m_GameObject: {fileID: 223671067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3749301, y: -0.86944187, z: 0.054285094}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3038,6 +3037,7 @@ GameObject:
   - component: {fileID: 539723192}
   - component: {fileID: 539723195}
   - component: {fileID: 539723194}
+  - component: {fileID: 539723196}
   m_Layer: 0
   m_Name: pot_2
   m_TagString: Hide
@@ -3169,6 +3169,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 6.56}
   m_EdgeRadius: 0
+--- !u!114 &539723196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539723191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685fb546071a72a46bd230646c8eb42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openBag: {fileID: 0}
+  morseCode: {fileID: 0}
 --- !u!1 &560519960
 GameObject:
   m_ObjectHideFlags: 0
@@ -4218,9 +4232,10 @@ GameObject:
   - component: {fileID: 779688297}
   - component: {fileID: 779688296}
   - component: {fileID: 779688295}
+  - component: {fileID: 779688298}
   m_Layer: 0
   m_Name: ZoomColorPuzzle
-  m_TagString: Untagged
+  m_TagString: Lock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4297,6 +4312,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &779688298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779688294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685fb546071a72a46bd230646c8eb42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openBag: {fileID: 0}
+  morseCode: {fileID: 0}
 --- !u!1 &801961687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +4639,7 @@ GameObject:
   - component: {fileID: 817734591}
   - component: {fileID: 817734594}
   - component: {fileID: 817734593}
+  - component: {fileID: 817734595}
   m_Layer: 0
   m_Name: Globe
   m_TagString: Untagged
@@ -4741,6 +4771,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.68, y: 2.02}
   m_EdgeRadius: 0
+--- !u!114 &817734595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817734590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685fb546071a72a46bd230646c8eb42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openBag: {fileID: 0}
+  morseCode: {fileID: 0}
 --- !u!1 &909697889
 GameObject:
   m_ObjectHideFlags: 0
@@ -8250,6 +8294,7 @@ GameObject:
   - component: {fileID: 1569907904}
   - component: {fileID: 1569907907}
   - component: {fileID: 1569907906}
+  - component: {fileID: 1569907908}
   m_Layer: 0
   m_Name: Blue_Clock
   m_TagString: Untagged
@@ -8381,6 +8426,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.32, y: 1.48}
   m_EdgeRadius: 0
+--- !u!114 &1569907908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569907903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685fb546071a72a46bd230646c8eb42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openBag: {fileID: 0}
+  morseCode: {fileID: 0}
 --- !u!1 &1580767725
 GameObject:
   m_ObjectHideFlags: 0
@@ -11611,6 +11670,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7678660990875298081, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
+      propertyPath: click
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cd59321ef22dd5459f0f4aa6e004d48, type: 3}
+    - target: {fileID: 7678660990875298081, guid: fb2b83d64f3bcb04bb8f840d5c5722ff, type: 3}
       propertyPath: rightScene
       value: Room1_GameScene
       objectReference: {fileID: 0}
@@ -11627,6 +11690,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2789965585026986609, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
+      propertyPath: click
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cd59321ef22dd5459f0f4aa6e004d48, type: 3}
     - target: {fileID: 2789965585026986609, guid: 3024e020c13fda347a9901365acba2a4, type: 3}
       propertyPath: leftScene
       value: Room3_GameScene
@@ -11795,8 +11862,8 @@ SceneRoots:
   - {fileID: 338704510}
   - {fileID: 635608538}
   - {fileID: 972298840}
-  - {fileID: 167431618}
   - {fileID: 779688297}
+  - {fileID: 167431618}
   - {fileID: 1815250791}
   - {fileID: 1240753362}
   - {fileID: 6313688781693884384}

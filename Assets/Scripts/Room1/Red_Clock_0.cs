@@ -14,16 +14,15 @@ public class Red_Clock_0 : MonoBehaviour  // Room1¿¡ ÀÖ´Â »¡°£ ½Ã°è ÆÛÁñ¿¡ »ç¿ëÇ
     public int step = 0; // ÇöÀç ´«±İ
 
     [SerializeField] GameObject openDoor;  // Safe ¹® ¿­·ÁÀÖ´Â ¸ğ½À ¿ÀºêÁ§Æ®
-    [SerializeField] GameObject keyNoteG;  // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ®
+    [SerializeField] GameObject greenNote1;  // ÂÊÁö G°¡ µé¾îÀÖ´Â ¿ÀºêÁ§Æ®
 
-    //###########
-    AudioSource audioSource;    // 
-    [SerializeField] AudioClip dial;    // 
-    [SerializeField] AudioClip ureka;   // 
+    AudioSource audioSource;    // ¿Àµğ¿À ¼Ò½º ÄÄÆ÷³ÍÆ®¸¦ Ã£±â À§ÇÑ ÇÊµå
+    [SerializeField] AudioClip dial;   // ´ÙÀÌ¾ó µ¹¸± ¶§ ³ª´Â ¼Ò¸®
+    [SerializeField] AudioClip open;   // ¹® ¿­¸± ¶§ ³ª´Â ¼Ò¸®
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();  // ¿Àµğ¿À ¼Ò½º ÄÄÆ÷³ÍÆ® Ã£±â
     }
 
     void OnMouseDown() // ÀÌ ½ºÅ©¸³Æ® ¿ÀºêÁ§Æ®ÀÇ Äİ¶óÀÌ´õ ³»¿¡¼­ ¸¶¿ì½º Å¬¸¯½Ã
@@ -107,8 +106,7 @@ public class Red_Clock_0 : MonoBehaviour  // Room1¿¡ ÀÖ´Â »¡°£ ½Ã°è ÆÛÁñ¿¡ »ç¿ëÇ
 
     void rotateWheel(float ang)     // È¸ÀüÇÏ´Â ¸Ş¼­µå
     {
-        //###########
-        audioSource.PlayOneShot(dial);
+        audioSource.PlayOneShot(dial); // ´ÙÀÌ¾ó µ¹¸± ¶§ ³ª´Â ¼Ò¸® Àç»ı
 
 
         transform.Rotate(new Vector3(0, 0, ang)); // ¿ÀºêÁ§Æ® È¸Àü
@@ -138,11 +136,10 @@ public class Red_Clock_0 : MonoBehaviour  // Room1¿¡ ÀÖ´Â »¡°£ ½Ã°è ÆÛÁñ¿¡ »ç¿ëÇ
         {
             print("Á¤´ä");
 
-            //###########
-            audioSource.PlayOneShot(ureka);
+            audioSource.PlayOneShot(open);  // ¹® ¿­¸± ¶§ ³ª´Â ¼Ò¸® Àç»ı
 
             this.openDoor.SetActive(true); // ¹® ¿­¸° ¸ğ½À È°¼ºÈ­
-            this.keyNoteG.SetActive(true); // ÂÊÁö G ¿ÀºêÁ§Æ® È°¼ºÈ­
+            this.greenNote1.SetActive(true); // ÃÊ·Ï»ö ÈùÆ® ÂÊÁö ¿ÀºêÁ§Æ® È°¼ºÈ­
             /// Lobby¿¡ ÀÖ´Â ¿­¼è ¹Ú½º¸¦ ¿­±â À§ÇÑ ´Ü¼­
         }
     }

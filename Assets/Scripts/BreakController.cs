@@ -2,10 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static Unity.Collections.AllocatorManager;
 
 public class BreakController : MonoBehaviour // 꽃병이나 컵이나 벽을 깨트리게 하는 오브젝트
 {
     [SerializeField] GameObject broke;   // 깨져있는 잔해 모습 오브젝트
+
+    AudioSource audioSource;    // 오디오 소스 컴포넌트를 찾기 위한 필드
+    [SerializeField] AudioClip breaked; // 깨졌을 때 재생될 오디오 클립
+
+    private void Start()
+    {
+        this.audioSource = GetComponent<AudioSource>();  // 오디오 소스 컴포넌트 찾기
+    }
 
     private void OnMouseDown() // 오브젝트를 클릭하면 실행되는 메서드
     {
@@ -22,6 +31,7 @@ public class BreakController : MonoBehaviour // 꽃병이나 컵이나 벽을 깨트리게 하
         {
             gameObject.SetActive(false); // 깨지지 않은 오브젝트(=본인) 비활성화 
             broke.SetActive(true);   // 깨져있는 잔해 오브젝트 활성화
+            this.audioSource.PlayOneShot(breaked);   // 클릭했을 때 오디오 재생
         }
     }
 }

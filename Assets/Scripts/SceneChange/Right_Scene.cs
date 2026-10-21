@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Right_Scene : MonoBehaviour
 {
-    [SerializeField] string rightScene;
+    [SerializeField] string rightScene; // 오른쪽 씬 이름
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(rightScene);
+        SceneManager.LoadScene(rightScene); // 오른쪽 씬으로 이동
     }
 }
