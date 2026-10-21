@@ -25,11 +25,7 @@ public class DoorController : MonoBehaviour     // 로비에 있는 현관문을 열 때 사
 
         if (selectSprite.name.Equals("Key")) // 현재 선택된 아이템이 Key라면
         {
-            /*GetComponent<SpriteRenderer>().sprite = openDoor;
-            // 스프라이트 이미지를 openDoor로 변경하기
-            // = 즉, 문을 열기*/
-
-            openDoor.SetActive(true);   // 문 열린 오브젝트 활성화
+            this.openDoor.SetActive(true);   // 문 열린 오브젝트 활성화
         }
     }
 }
