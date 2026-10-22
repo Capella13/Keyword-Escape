@@ -9,7 +9,7 @@ public class OutletController : MonoBehaviour
 
     private void OnMouseDown() // 문을 클릭하면 실행되는 메서드
     {
-        Sprite selectSprite = ItemController.items[ActiveItem.selectItemIndex]
+        Sprite selectSprite = Inventory.items[ActiveItem.selectItemIndex]
             .GetComponent<Image>().sprite;
         // 인벤토리 목록에서 선택한 아이템의 이미지를 찾기
 

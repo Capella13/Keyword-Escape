@@ -12,12 +12,15 @@ public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
     [SerializeField] GameObject[] inventorys;    // Hierarchy에 있는 inventory
 
     public static GameObject selectItem;         // 선택된 인벤토리
-    public static int selectItemIndex;           // 현재 선택된 아이템의 인덱스 번호를 selectItemIndex 필드에 저장
+    public static int selectItemIndex = -1;           // 현재 선택된 아이템의 인덱스 번호를 selectItemIndex 필드에 저장
+                                                      // DoorController에서 인벤토리의 아이템을 선택하지 않은 상태에서 문을 클릭했을때
+                                                      // items 배열 요소에 접근하여 발생하는 에러를 방지하기 위해 일부러 -1로 초기화     
 
     public void OnButtonClick() // 버튼을 클릭할 때 마다 실행되는 메서드
     {
-        print(ItemController.items[int.Parse(EventSystem.current.currentSelectedGameObject.tag)]
-            .GetComponent<Image>().sprite.ToString());
+        
+        //print(ItemController.items[int.Parse(EventSystem.current.currentSelectedGameObject.tag)]
+        //    .GetComponent<Image>().sprite.ToString());
         // ItemController에 있는 items배열(목록 버튼 UI들의 묶음)의 sprite의 이름을 찾아
         // 현재 들어간 아이템이 무엇인지 파악.
 
@@ -28,8 +31,12 @@ public class ActiveItem : MonoBehaviour // 인벤토리가 가지고 있는 스크립트
         // 현재 선택된 아이템의 인덱스 번호를 selectItemIndex 필드에 저장한다.
         /// 저장하지 않으면 일일히 좌항의 있는 내용을 적어야 하는 것에 대한 불편함과,
         /// 아이템 자세히보기 버튼을 클릭했을 때 현재 어떤 아이템이 선택이 되었는지가 분실되기 때문
+        /// 
 
-        selectItem = ItemController.items[selectItemIndex];
+        if (Inventory.items[selectItemIndex] != null) //널 체크
+        {
+            selectItem = Inventory.items[selectItemIndex];
+        }
         // 현재 선택된 인벤토리 안에 있는 아이템
 
         if (this.flag) // flag가 true이라면

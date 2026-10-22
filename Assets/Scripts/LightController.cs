@@ -14,7 +14,7 @@ public class LightController : MonoBehaviour    // 전등의 전구 부분을 깨트리는 �
     {
         if (selectSprite != null)   // 만일 선택된 아이템이 없다면
         {
-            selectSprite = ItemController.items[ActiveItem.selectItemIndex]
+            selectSprite = Inventory.items[ActiveItem.selectItemIndex]
             .GetComponent<Image>().sprite;
             // 인벤토리 목록에서 선택한 아이템의 이미지를 찾기
         }

@@ -20,7 +20,7 @@ public class BreakController : MonoBehaviour // 꽃병이나 컵이나 벽을 깨트리게 하
     {
         if (selectSprite != null)   // 만일 선택된 아이템이 없다면
         {
-            selectSprite = ItemController.items[ActiveItem.selectItemIndex]
+            selectSprite = Inventory.items[ActiveItem.selectItemIndex]
             .GetComponent<Image>().sprite;
             // 인벤토리 목록에서 선택한 아이템의 이미지를 찾기
         }
@@ -34,6 +34,7 @@ public class BreakController : MonoBehaviour // 꽃병이나 컵이나 벽을 깨트리게 하
         {
             gameObject.SetActive(false); // 깨지지 않은 오브젝트(=본인) 비활성화 
             broke.SetActive(true);   // 깨져있는 잔해 오브젝트 활성화
+            audioSource.PlayOneShot(breaked);
         }
     }
 }

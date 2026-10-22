@@ -6,7 +6,14 @@ using UnityEngine.UI;
 public class ItemController : MonoBehaviour
 {
     [SerializeField] Sprite newSprite;      // Inspector에서 Image의 Source Image로 들어가야 할 필드
-    public static GameObject[] items;       // Hierarchy에 있는 inventory
+  
+    //public static GameObject[] items;       // Hierarchy에 있는 inventory
+                                              // ItemController를 가지고 있는 오브젝트들(예, Key)이 초기에
+                                              // 비활성 상태이므로 여기서 배열을 만들면 다른 스크립트에서
+                                              // items 배열을 사용할수 없다(null 에러). 따라서, items 배열은
+                                              // 항상 활성상태에 있는 InventoryPanel 오브젝트에 Inventory
+                                              // 스크립트를 추가한뒤 그 스크립트에서 선언하고 초기화하였다.
+
 
     /*AudioSource audioSource;    // 오디오 소스 컴포넌트를 찾기 위한 필드
     [SerializeField] AudioClip pickUp;   // 아이템을 얻었을 때 나는 소리 (pop)*/
@@ -78,6 +85,7 @@ public class ItemController : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        /*
         items = new GameObject[12];    // 배열 인스턴스 생성
 
         // 각 요소마다 초기화 작업
@@ -92,7 +100,7 @@ public class ItemController : MonoBehaviour
         items[8] = GameObject.Find("Inventory_8");
         items[9] = GameObject.Find("Inventory_9");
         items[10] = GameObject.Find("Inventory_10");
-        items[11] = GameObject.Find("Inventory_11");
+        items[11] = GameObject.Find("Inventory_11");*/
     }
 
     private void OnMouseDown() // Scene에 있는 게임 오브젝트를 클릭했을 때 자동 호출되는 이벤트 메소드
@@ -106,14 +114,14 @@ public class ItemController : MonoBehaviour
         // (아이템 오브젝트가 거의 동시에 삭제되므로 PlayOneShot()을 사용하면 소리가 안 남)*/
         /// 근데 소리가 너무 작아서 포기함.. 들리긴 들림
 
-        for (int i = 0; i < items.Length; i++) // Image UI(아이템 저장 목록)중에서 비어있는 부분에 차례대로
+        for (int i = 0; i < Inventory.items.Length; i++) // Image UI(아이템 저장 목록)중에서 비어있는 부분에 차례대로
                                                // 획득한 아이템 이미지를 추가하기 위하여 목록들의
                                                // Source Image가 null인지 아닌지를 체크하는 반복문.
                                                // null인 경우에만 이미지를 추가한다.
         {
-            if (items[i].GetComponent<Image>().sprite == null) // Source Image가 null인지 체크
+            if (Inventory.items[i].GetComponent<Image>().sprite == null) // Source Image가 null인지 체크
             {
-                items[i].GetComponent<Image>().sprite = newSprite; 
+                Inventory.items[i].GetComponent<Image>().sprite = newSprite; 
                 // 이미지가 null인 UI의 Image 컴포넌트의 sprite를 newSprite로 변경
 
                 break; // 이미지가 1개만 들어가게 반복문 탈출해야 한다.
