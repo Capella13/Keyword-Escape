@@ -1,4 +1,3 @@
-# 게임명 : Keyword Escape
 > # 🔑 Keyword Escape🚪
 
 ### 1. 게임 소개
