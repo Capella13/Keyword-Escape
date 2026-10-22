@@ -74,15 +74,17 @@ public class ZoomController : MonoBehaviour // 오브젝트를 줌인해주는 메서드
             // Book_Open 오브젝트가 활성화 되며 뒤로 가기 버튼을 누를 수도 없고 닫기 버튼을 누를 수도 없는 상황이 발생하기 때문.
         }
 
-        this.cameraMain.transform.position = new Vector3(this.transform.position.x + this.leftSet,
-            this.transform.position.y, -10);
-        // 카메라의 position 값을, 클릭한 오브젝트의 위치로 이동시킨다.
-        /// 또한, x의 값에 보정값을 더하여 확대한 오브젝트가 인벤토리 때문에 오른쪽으로 쏠려보이는 오브젝트를
-        /// 임의로 왼쪽으로 옮겨 보기 좋게 한다.
 
-        this.cameraMain.GetComponent<Camera>().orthographicSize = 1.3f;
-        // 메인 카메라는 원근감이 없기 때문에 orthographicSize로 zoom을 조정해주어야 한다.
+            this.cameraMain.transform.position = new Vector3(this.transform.position.x + this.leftSet,
+                this.transform.position.y, -10);
+            // 카메라의 position 값을, 클릭한 오브젝트의 위치로 이동시킨다.
+            /// 또한, x의 값에 보정값을 더하여 확대한 오브젝트가 인벤토리 때문에 오른쪽으로 쏠려보이는 오브젝트를
+            /// 임의로 왼쪽으로 옮겨 보기 좋게 한다.
+            /// 
+            this.cameraMain.GetComponent<Camera>().orthographicSize = 1.3f;
+            // 메인 카메라는 원근감이 없기 때문에 orthographicSize로 zoom을 조정해주어야 한다.
 
-        this.backButton.SetActive(true);   // 뒤로 가기 버튼 활성화 하기
+            this.backButton.SetActive(true);   // 뒤로 가기 버튼 활성화 하기
+   
     }
 }

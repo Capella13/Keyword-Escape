@@ -25,13 +25,15 @@ public class BreakController : MonoBehaviour // 꽃병이나 컵이나 벽을 깨트리게 하
             // 인벤토리 목록에서 선택한 아이템의 이미지를 찾기
         }
 
-        if (selectSprite == null)   // 만일 선택된 아이템이 없다면
+        /*if (selectSprite == null)   // 만일 선택된 아이템이 없다면
         {
             return; // 아무것도 실행하지 않고 넘어가기
-        }
+        }*/
 
         if (selectSprite.name.Equals("Hammer")) // 현재 선택된 아이템이 Hammer라면
         {
+            print(1);
+
             gameObject.SetActive(false); // 깨지지 않은 오브젝트(=본인) 비활성화 
             broke.SetActive(true);   // 깨져있는 잔해 오브젝트 활성화
             audioSource.PlayOneShot(breaked); // 깨지는 소리 재생

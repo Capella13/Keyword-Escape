@@ -8,6 +8,14 @@ public class DoorController : MonoBehaviour     // 로비에 있는 현관문을 열 때 사
 {
     [SerializeField] GameObject openDoor;   // 문 열린 모습 오브젝트
 
+    [SerializeField] AudioClip open; // 문 열린 오브젝트를 클릭했을 때 재생될 오디오 클립
+    AudioSource audioSource;    // 오디오 소스 컴포넌트를 찾기 위한 필드
+
+    private void Start()
+    {
+        this.audioSource = GetComponent<AudioSource>();  // 오디오 소스 컴포넌트 찾기
+    }
+
     private void OnMouseDown() // 문을 클릭하면 실행되는 메서드
     {
         if (ActiveItem.selectItemIndex != -1) // 인벤토리 목록을 선택하지 않은 상태에서는 작업처리가 되지 않도록 한다
@@ -22,6 +30,11 @@ public class DoorController : MonoBehaviour     // 로비에 있는 현관문을 열 때 사
                 // = 즉, 문을 열기*/
 
                 openDoor.SetActive(true);   // 문 열린 오브젝트 활성화
+                openDoor.GetComponent<BoxCollider2D>().enabled = true; // 문 열린 오브젝트 콜라이더 활성화
+
+                gameObject.GetComponent<BoxCollider2D>().enabled = false; // 본인 콜라이더 비활성화
+
+                audioSource.PlayOneShot(open); // 열리는 소리 재생
             }
         }    
         // 인벤토리 목록에서 선택한 아이템의 이미지를 찾기

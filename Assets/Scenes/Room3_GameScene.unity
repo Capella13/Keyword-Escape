@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -780,6 +779,7 @@ GameObject:
   - component: {fileID: 142097957}
   - component: {fileID: 142097960}
   - component: {fileID: 142097959}
+  - component: {fileID: 142097961}
   m_Layer: 0
   m_Name: Normal_Cabinet
   m_TagString: Untagged
@@ -867,6 +867,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openDoor: {fileID: 1896653340}
+  Note: {fileID: 2145592310}
+  open: {fileID: 8300000, guid: b9c0e8423cea84b4ea2b4c2459e4b769, type: 3}
 --- !u!61 &142097960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -912,6 +914,102 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4461539, y: 1.4846153}
   m_EdgeRadius: 0
+--- !u!82 &142097961
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142097956}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &153590615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,7 +1494,7 @@ GameObject:
   - component: {fileID: 182106939}
   m_Layer: 0
   m_Name: Outlet
-  m_TagString: Lock
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1635,7 +1733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &224530985
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2736,7 +2834,7 @@ GameObject:
   - component: {fileID: 378687435}
   m_Layer: 0
   m_Name: ZoomPot1
-  m_TagString: Break
+  m_TagString: Zoom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5985,7 +6083,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041231557}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fdfcca4d550faf4ea24badad8fd8b1d, type: 3}
   m_Name: 
@@ -8586,7 +8684,7 @@ GameObject:
   - component: {fileID: 1528541764}
   m_Layer: 0
   m_Name: ZoomOutlet
-  m_TagString: Lock
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9880,7 +9978,6 @@ GameObject:
   - component: {fileID: 1896653344}
   - component: {fileID: 1896653343}
   - component: {fileID: 1896653342}
-  - component: {fileID: 1896653341}
   m_Layer: 0
   m_Name: Cabinet_Open_1
   m_TagString: Untagged
@@ -9888,19 +9985,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1896653341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1896653340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315db30c810d024b9125e6ac6ad9dca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newSprite: {fileID: 769666796, guid: a49d2eb9a7f1bde4d8f24716a697ea44, type: 3}
 --- !u!61 &1896653342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11622,7 +11706,7 @@ GameObject:
   - component: {fileID: 2145592312}
   - component: {fileID: 2145592311}
   m_Layer: 0
-  m_Name: Key_Note_M
+  m_Name: Green_Note_0
   m_TagString: NoteU
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11640,7 +11724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3315db30c810d024b9125e6ac6ad9dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 171539268, guid: a49d2eb9a7f1bde4d8f24716a697ea44, type: 3}
+  newSprite: {fileID: 206210842, guid: a49d2eb9a7f1bde4d8f24716a697ea44, type: 3}
 --- !u!61 &2145592312
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11677,7 +11761,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.61333334, y: 0.64444447}
+    oldSize: {x: 0.61777776, y: 0.6488889}
     newSize: {x: 0.63555557, y: 0.64666665}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -11726,8 +11810,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
-  m_Sprite: {fileID: 171539268, guid: a49d2eb9a7f1bde4d8f24716a697ea44, type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 206210842, guid: a49d2eb9a7f1bde4d8f24716a697ea44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11747,7 +11831,7 @@ Transform:
   m_GameObject: {fileID: 2145592310}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: -0.941, z: 0}
+  m_LocalPosition: {x: 3.082, y: -2.064, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11776,13 +11860,13 @@ SceneRoots:
   - {fileID: 771924707}
   - {fileID: 1127860951}
   - {fileID: 586513100}
-  - {fileID: 2145592314}
   - {fileID: 545468095}
   - {fileID: 2010085128}
   - {fileID: 2118816417}
   - {fileID: 85598878}
   - {fileID: 142097958}
   - {fileID: 1739109873}
+  - {fileID: 2145592314}
   - {fileID: 1896653344}
   - {fileID: 1194968744}
   - {fileID: 1840436013}
