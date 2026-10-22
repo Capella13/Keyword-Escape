@@ -148,11 +148,11 @@ public class ItemController : MonoBehaviour
         {
             isGotBattery = true;    // Battery를 획득했음을 체크하는 플래그 변수를 true로 변경
         }
-        else if (gameObject.CompareTag("Green_Note_1"))
+        else if (gameObject.CompareTag("Green_Note_0"))
         {
             isGotGreenNote1 = true; // Green_Note_1을 획득했음을 체크하는 플래그 변수를 true로 변경
         }
-        else if (gameObject.CompareTag("Green_Note_2"))
+        else if (gameObject.CompareTag("Green_Note_1"))
         {
             isGotGreenNote2 = true; // Green_Note_2을 획득했음을 체크하는 플래그 변수를 true로 변경
         }
